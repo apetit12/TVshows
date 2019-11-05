@@ -2,7 +2,7 @@
 
 #### Tools: BeautifulSoup, Seaborn, Pandas, Statsmodels, Regex
 
-This personal project aims at forecasting the audience of three French TV shows, namely "Quotidien", "TPMP", and "C à vous" 
+This personal project aims at forecasting the audience of three French TV shows, namely "[Quotidien](https://en.wikipedia.org/wiki/Quotidien)", "[TPMP](https://en.wikipedia.org/wiki/It%27s_Only_TV)", and "[C à vous](https://en.wikipedia.org/wiki/C_à_vous)" 
 using advanced Machine Learning techniques. 
 
 ### Data
