@@ -1,0 +1,1170 @@
+(dp0
+S'temp dataframe df_temp'
+p1
+ccopy_reg
+_reconstructor
+p2
+(cpandas.core.frame
+DataFrame
+p3
+c__builtin__
+object
+p4
+Ntp5
+Rp6
+(dp7
+S'_metadata'
+p8
+(lp9
+sS'_typ'
+p10
+S'dataframe'
+p11
+sS'_data'
+p12
+g2
+(cpandas.core.internals
+BlockManager
+p13
+g4
+Ntp14
+Rp15
+((lp16
+cpandas.core.indexes.base
+_new_Index
+p17
+(cpandas.core.indexes.base
+Index
+p18
+(dp19
+S'data'
+p20
+cnumpy.core.multiarray
+_reconstruct
+p21
+(cnumpy
+ndarray
+p22
+(I0
+tp23
+S'b'
+p24
+tp25
+Rp26
+(I1
+(I4
+tp27
+cnumpy
+dtype
+p28
+(S'O8'
+p29
+I0
+I1
+tp30
+Rp31
+(I3
+S'|'
+p32
+NNNI-1
+I-1
+I63
+tp33
+bI00
+(lp34
+S'txt_data'
+p35
+aS'month_name'
+p36
+aS'year_name'
+p37
+aS'text_1'
+p38
+atp39
+bsS'name'
+p40
+Nstp41
+Rp42
+ag17
+(cpandas.core.indexes.range
+RangeIndex
+p43
+(dp44
+S'start'
+p45
+I0
+sS'step'
+p46
+I1
+sS'stop'
+p47
+I10
+sg40
+Nstp48
+Rp49
+a(lp50
+g21
+(g22
+(I0
+tp51
+g24
+tp52
+Rp53
+(I1
+(I4
+I10
+tp54
+g31
+I00
+(lp55
+(lp56
+VNOVEMBRE    2019     
+p57
+aV   QUOTIDIEN   C À VOUS       Vend. 01     Partie 1 : 0.38 (Best of)   Partie 2 : 0.54 (Best of)       Partie 1 : 0.42 (Best of)   Partie 2 : 0.67 (Best of)     1.44
+p58
+aa(lp59
+VOCTOBRE    2019     
+p60
+aV   QUOTIDIEN   C À VOUS       Mardi 01     Partie 1 : 0.89   Partie 2, 20h38-21h17 : 1.12       Partie 1 : 0.73   Partie 2, 20h13-21h14 :  1.38     1.17       Merc. 02     Partie 1 : 0.80   Partie 2, 20h37-21h15 : 1.15       Partie 1 : 0.80   Partie 2, 20h11-21h15 :  1.44     1.10       Jeudi 03     Partie 1, 19h40-20h36 : 0.80   Prime Aznavour (Hanouna) : 0.78       Partie 1 : 0.71   Partie 2, 20h13-21h14 :  1.48     1.08       Vend. 04     Partie 1 : 0.51 (Castaldi)   Partie 2 : 0.79 (Castaldi)       Partie 1 : 0.77   Partie 2 :  1.06     1.03       Lundi 07     Partie 1 : 0.94   Partie 2, 20h37-21h16 : 1.20       Partie 1 : 0.91   Partie 2, 20h15-21h15 :  1.59     1.23       Mardi 08     Partie 1 : 0.72 (Castaldi)   Partie 2 : 0.96 (Castaldi)       Partie 1 : 0.91   Partie 2 :  1.74     1.22       Merc. 09     Partie 1 : 0.82 (Castaldi)   Partie 2 : 1.04 (Castaldi)       Partie 1 : 0.86   Partie 2 :  1.56     1.25       Jeudi 10     Partie 1 : 0.87   Partie 2, 20h40-21h36 (Prime) : 1.20       Partie 1 : 0.87   Partie 2 :  1.48     1.21       Vend. 11     Partie 1 : 0.57 (Castaldi)   Partie 2 : 0.65 (Castaldi)       Partie 1: 0.73   Partie 2 :  1.29     1.18       Lundi 14     Partie 1 : 0.88   Partie 2, 20h36-21h13 : 1.12       Partie 1 : 0.93   Partie 2, 20h13-21h16 :  1.61     1.35       Mardi 15     Partie 1 : 1.00   Partie 2, 20h40-21h15 : 1.40       Partie 1 : 0.85   Partie 2, 20h10-21h12 :  1.54     1.15       Merc. 16     Partie 1 : 0.88   Partie 2, 20h43-21h16 : 1.35       Partie 1: 0.88   Partie 2, 20h12-21h11 :  1.46     1.39       Jeudi 17     Partie 1 : 0.89   Partie 2 (Prime) : 1.08       Partie 1 : 0.87   Partie 2 :  1.71     1.10       Vend. 18     Partie 1 : 0.57 (Castaldi)   Partie 2 : 0.83 (Castaldi)       Partie 1 : 0.92   Partie 2 :  1.22     1.09       Lundi 21     Partie 1 : 0.91   Partie 2, 20h43-21h17 : 1.29       Partie 1 : 0.88   Partie 2, 20h13-21h15 :  1.62     1.13       Mardi 22     Partie 1 : 0.87   Partie 2, 20h44-21h15 : 1.16       Partie 1 : 0.96   Partie 2, 20h14-21h14 :  1.62     1.23       Merc. 23     Partie 1 : 0.94   Partie 2, 20h44-21h14 : 1.30       Partie 1 : 0.87   Partie 2, 20h14-21h13 :  1.50     1.12       Jeudi 24     Partie 1 : 0.80   Partie 2, 20h46-21h36 (Prime) : 0.97       Partie 1 : 0.96   Partie 2 :  1.50     1.12       Vend. 25     Partie 1 : 0.61 (Castaldi)   Partie 2 : 0.84 (Castaldi)       Partie 1 : 0.86   Partie 2 :  1.29     1.13       Lundi 28     Partie 1 : 1.00   Partie 2, 20h42-21h11 :  1.30       Partie 1 : 0.68 (Best of)   Partie 2 : 1.09 (Best of)     1.31       Mardi 29     Partie 1 : 1.09   Partie 2 :  1.49       Partie 1 : 0.59 (Best of)   Partie 2 : 0.89 (Best of)     1.30       Merc. 30     Partie 1 : 0.89   Partie 2 : 1.12       Partie 1 :  0.45 (Best of)   Partie 2 : 0.80 (Best of)     1.31       Jeudi 31     Partie 1 : 0.73   Partie 2: 0.96       Partie 1 :  0.39  (Best of)   Partie 2 : 0.70 (Best of)     1.19
+p61
+aa(lp62
+VSEPTEMBRE 2019   
+p63
+aV   QUOTIDIEN   C À VOUS       Lundi 02     Partie 1, 19h45-20h38 : 0.97   Partie 2, 20h45-21h17 : 1.25       Partie 1, 19h26-20h07 : 0.74   Partie 2, 20h15-21h17 :  1.28     0.96 million       Mardi 03     Partie 1 : 0.87   Partie 2, 20h44-21h17 : 1.10       Partie 1 : 0.77   Partie 2, 20h17-21h17 :  1.25     0.89       Merc. 04     Partie 1 : 0.94   Partie 2, 20h42-21h16 :  1.28       Partie 1 : 0.62   Partie 2, 20h11-21h04 : 1.16     0.91       Jeudi 05     Partie 1 : 0.87   Partie 2, 20h42-21h15 : 1.16       Partie 1 : 0.68   Partie 2, 20h12-21h14 :  1.23     0.89       Vend. 06     Partie 1 (Castaldi) : 0.51   Partie 2 (Castaldi) : 0.67       Partie 1 : 0.59   Partie 2 : 0.98     0.86       Lundi 09     Partie 1 : 0.85   Partie 2, 20h41-21h15 : 1.23       Partie 1 : 0.69   Partie 2, 20h11-21h12 :  1.32     0.99       Mardi 10     Partie 1 : 0.83   Partie 2, 20h39-21h13 : 1.10       Partie 1 : 0.73   Partie 2, 20h11-21h13 :  1.29     0.81       Merc. 11     Partie 1 : 0.82   Partie 2, 20h41-21h13 : 1.22       Partie 1 : 0.72   Partie 2, 20h14-21h15 :  1.23     1.03       Jeudi 12     Partie 1 , 19h43-20h38 : 0.76   Partie 2, 20h45-21h41 (Prime) : 0.95       Partie 1 : 0.57   Partie 2, 20h09-21h06 :  1.35     0.81       Vend. 13     Partie 1 :   0.42  (Castaldi)   Partie 2 :  0.56   (Castaldi)       Partie 1 : 0.57   Partie 2 :  0.97     0.83       Lundi 16     Partie 1 : 0.85   Partie 2, 20h41-21h15 : 1.23       Partie 1 : 0.75   Partie 2, 20h12-21h12 :  1.48     0.90       Mardi 17     Partie 1 : 0.80   Partie 2, 20h43-21h13 : 1.16       Partie 1 : 0.68   Partie 2, 20h13-21h09 :  1.27     0.99       Merc. 18     Partie 1 : 0.85   Partie 2, 20h39-21h15 : 1.08       Partie 1 : 0.75   Partie 2, 20h10-21h11 :  1.40     0.95       Jeudi 19     Partie 1 : 0.81   Partie 2 (Prime) : 1.05       Partie 1 : 0.74   Partie 2 :  1.34     0.98       Vend. 20     Partie 1 :  0.45  (Castaldi)   Partie 2 : 0.76 (Castaldi)       Partie 1 : 0.71   Partie 2 :  1.18     0.78       Lundi 23     Partie 1 : 0.94   Partie 2, 20h46-21h14 :  1.53       Partie 1 : 0.78   Partie 2 , 20h13-21h16 : 1.50     1.00       Mardi 24     Partie 1 : 0.76   Partie 2, 20h39-21h13 : 1.20       Partie 1 : 0.79   Partie 2, 20h13-21h13 :  1.36     1.06       Merc. 25     Partie 1 : 0.85   Partie 2, 20h39-21h15 : 1.14       Partie 1 : 0.77   Partie 2, 20h15-21h14 :  1.45     1.16       Jeudi 26     Partie 1 : 0.96   Partie 2, 20h44-21h42 (Prime) : 1.08       Partie 1 : 0.79   Partie 2 :  1.38     1.00       Vend. 27     Partie 1 :  0.46  (Castaldi)   Partie 2 : 0.78 (Castaldi)       Partie 1 : 0.78   Partie 2 :  1.18     1.01       Lundi 30     Partie 1 : 0.89   Partie 2, 20h39-21h17 : 1.26       Partie 1 : 0.79   Partie 2, 20h14-21h09 :  1.44     1.13
+p64
+aa(lp65
+VJUIN 2019   
+p66
+aV   QUOTIDIEN   C À VOUS       Lundi 03     Partie 1 : 0.92   Partie 2 : 1.36 (20h45-21h17)       Partie 1 : 0.80   Partie 2 :  1.40  (20h13-21h09)     1.00       Mardi 04     Partie 1 : 0.94   Partie 2 : 1.26 (20h45-21h18)       Partie 1 : 0.76   Partie 2 :  1.40  (20h12-21h15)     0.95       Merc. 05     Partie 1 : 0.90   Partie 2 : 1.35 (20h45-21h18)       Partie 1 : 0.85   Partie 2 :  1.37  (20h13-21h08)     1.17       Jeudi 06     Partie 1 : 0.82   Partie 2 :  1.25  (20h45-21h17)       Partie 1 : 0.69   Partie 2 : 1.24 (20h14-21h19!)     1.02       Vend. 07     Partie 1 : 0.47 (Castaldi)   Partie 2 : 0.59 (Castaldi)       Partie 1 : 0.66   Partie 2 : 1.00     1.11       Lundi 10     Partie 1 : 0.98   Partie 2 : 1.54 (20h46-21h16)       Partie 1 : 0.91   Partie 2 :  1.59  (20h15-21h18)     1.13       Mardi 11     Partie 1 : 0.93   Partie 2 : 1.33 (20h38-21h15)       Partie 1 : 0.87   Partie 2 :  1.51  (20h11-21h13)     1.15       Merc. 12     Partie 1 : 0.81   Partie 2 : 1.14 (20h44-21h13)       Partie 1 : 0.95   Partie 2 :  1.40  (20h15-21h13)     1.15       Jeudi 13     
+p67
+aV : 0.91 (19h46-20h41)   ! Prime 
+p68
+aV :  1.21  (20h49-21h55)       Partie 1 : 0.65   Partie 2 :  1.21  (20h10-21h11)     1.00       Vend. 14     Partie 1 : 0.52 (Castaldi)   Partie 2 : 0.85 (Castaldi)       Partie 1 : 0.79   Partie 2 :  1.23     1.00       Lundi 17     Partie 1 : 0.77   Partie 2 : 1.07       Partie 1 : 0.72   Partie 2 :  1.20     1.03       Mardi 18     Partie 1 : 0.83   Partie 2 : 1.15 (20h45-21h16)       Partie 1 : 0.72   Partie 2 :  1.25  (! Foot à 20h50)     1.00       Merc. 19     Partie 1 : 1.00   Partie 2 : 1.29 (20h44-21h15)       Partie 1 : 0.85   Partie 2 :  1.48  (! Foot à 20h50)     1.00       Jeudi 20     
+p69
+aV : 0.81   ! Prime 
+p70
+aV, dès 20h45 : 1.21 (0.85 de moyenne jusque 00h30)       Partie 1 : 0.87   Partie 2 :  1.50  (! Foot à 20h50)     1.04       Vend. 21     Partie 1 : 0.54 (Castaldi)   Partie 2 : 0.75 (Castaldi)       Partie 1 : 0.67   Partie 2 :  1.02     1.00 (Spécial 10 ans)       Lundi 24     Partie 1 : 0.38 (Best of)   Partie 2 : 0.59 (Best of)       Numéro très court (Foot avant et après) :  1.31     0.75 (Best of)       Mardi 25     Partie 1 : 0.36 (Best of)   Partie 2 : 0.58 (Best of)       Partie 1 : 0.76   Partie 2 :  1.29  (! Foot à 20h50)     0.61 (Best of)       Merc. 26     Partie 1 : 0.33 (Best of)   Partie 2 : 0.53 (Best of)       Partie 1 : 0.75    Partie 2 :  1.24      0.63 (Best of)       Jeudi 27     Partie 1 : 0.28 (Best of)   Partie 2 : 0.48 (Best of)       Partie 1 : 0.72   Partie 2 :  1.23     0.48 (Best of)       Vend. 28     Partie 1 : 0.35 (Best of)   Partie 2 : 0.31 (Best of)       Partie 1 : 0.82   Partie 2 :  0.92     0.46 (Best of)
+p71
+aa(lp72
+VMAI 2019   
+p73
+aV   QUOTIDIEN   C À VOUS       Merc. 01     Partie 1 : 0.80   Partie 2 : 1.06 (20h45-21h13)       Partie 1 : 0.83   Partie 2 :  1.36  (20h11-21h09)     1.04       Jeudi 02     Partie 1 : 0.84    Partie 2 : Grande Rassrah 1.33.       Partie 1 : 0.76   Partie 2 :  1.48  (20h12-21h17)      1.21       Vend. 03     Partie 1 : 0.49 (best of)   Partie 2 : 0.58 (best of)       Partie 1 : 0.74   Partie 2 :  1.13     1.07       Lundi 06     Partie 1 : 1.03   Partie 2 : 1.29 (20h44-21h17)       Partie 1 : 0.84   Partie 2 :  1.65  (20h14-21h15)     1.09       Mardi 07     Partie 1 : 0.77   Partie 2 : 1.08 (20h45-21h16)       Partie 1 : 0.76   Partie 2 :  1.38  (20h13-21h16)     1.09       Merc. 08     Partie 1 : 1.06   Partie 2 : 1.42 (20h39-21h17)       Partie 1 : 1.03   Partie 2 :  1.54  (20h10- 21h03 )     1.28       Jeudi 09     Partie 1 : 1.03   Partie 2 : 1.67 (20h43-21h15)       Partie 1 : 0.90   Partie 2 :  1.71  (20h10-21h08)     1.27       Vend. 10     Partie 1 : 0.69 (Castaldi)   Partie 2 : 0.92 (Castaldi)       Partie 1 : 0.67   Partie 2 : 1.11     1.17       Lundi 13     Partie 1 : 1.01   Partie 2 : 1.48 (20h44-21h15)       Partie 1 : 0.86   Partie 2 :  1.69  (20h14-21h14)     1.11       Mardi 14     Partie 1 : 0.84   Partie 2 :  1.49  (20h46- 21h20! )       Partie 1 : 0.71   Partie 2 : 1.39 (20h16-21h12)     1.04       Merc. 15     Partie 1 : 0.93   Partie 2 : 1.32 (20h46-21h15)       Partie 1 : 0.66   Partie 2 :  1.37  (20h11-21h11)     1.01       Jeudi 16     Partie 1 : 0.91   Partie 2 : 1.25 (20h46-21h15)       Partie 1 : 0.79   Partie 2 :  1.49  (20h14-21h08)     0.99       Vend. 17     Partie 1 : 0.58 (Castaldi)   Partie 2 : 0.91 (Castaldi)       Partie 1 : 0.69   Partie 2 : 1.13     1.20       Lundi 20     Partie 1 : 0.98   Partie 2 : 1.42 (20h45- 21h19! )       Partie 1 : 0.79   Partie 2 :  1.56  (20h07-21h11)     1.26       Mardi 21     Partie 1 : 0.93   Partie 2 : 1.37 (20h44-21h17)       Partie 1 : 0.84   Partie 2 :  1.46  (20h15-21h15)     1.05       Merc. 22     Partie 1 : 1.01   Partie 2 :  1.46  (20h45-21h15)       Partie 1 : 0.84   Partie 2 : 1.40 (20h14-21h09)      1.10       Jeudi 23     Partie 1 : 0.98   Partie 2 : 1.41 (20h46-21h17)       Partie 1 : 0.82   Partie 2 :  1.61  (20h14- 21h20! )     0.97       Vend. 24     Partie 1 : 0.46 (Castaldi)   Partie 2 : 0.74 (Castaldi)       Partie 1 : 0.67   Partie 2 :  0.99     0.93       Lundi 27     Partie 1 : 0.93   Partie 2 : 1.38 (20h46-21h17)       Partie 1 : 1.03   Partie 2 :  1.65  (20h12-21h08)     1.24       Mardi 28     Partie 1 : 0.90   Partie 2 : 1.37 (20h44-21h19)       Partie 1 : 0.80   Partie 2 :  1.46  (20h15-21h16)     1.05       Merc. 29     Partie 1 : 0.46 (best of)   Partie 2 : 0.74 (best of)       Partie 1 : 0.76   Partie 2 :  1.20     0.89       Jeudi 30     Partie 1 : 0.38 (best of)   Partie 2 : 0.49 (best of)       Partie 1 : 0.38 (best of)   Partie 2 : 0.56 (best of)     0.59  (best of)       Vend. 31     Partie 1 : 0.29 (best of)   Partie 2 : 0.49 (best of)       Partie 1 : 0.25 (best of)   Partie 2 : 0.46 (best of)     0.52  (best of)
+p74
+aa(lp75
+VAVRIL 2019   
+p76
+aV   QUOTIDIEN   C À VOUS       Lundi 01     Partie 1 : 0.84   Partie 2 : 1.47 (20h40-21h12)       Partie 1 : 0.85   Partie 2 :  1.75  (20h12-21h14)     1.22        Mardi 02     Partie 1 : 0.84   Partie 2 : 1.29 (20h42-21h13)       Partie 1 : 0.84   Partie 2 :  1.47  (20h13-21h06)     1.26       Merc. 03     Partie 1 : 0.86   Partie 2 : 1.34 (20h40-21h15)       Partie 1 : 0.84   Partie 2 :  1.56  (20h13-21h12)      1.29       Jeudi 04     Partie 1 : 1.02   Partie 2 : 1.30 ( 20h37-22h25, Prime spécial 9 ans )       Partie 1 : 0.84   Partie 2 :  1.49  (20h14-21h12)     1.11       Vend. 05     Partie 1 : 0.72 (Castaldi)   Partie 2 : 0.83 (Castaldi)       Partie 1 : 0.80   Partie 2 :  1.21     1.10       Lundi 08     Partie 1 : 0.80 puis 0.89 (2 parties)   Partie 2 : 1.51 (20h41-21h19!)       Partie 1 : 0.84   Partie 2 :  1.70  (20h10-21h16)     1.19       Mardi 09     Partie 1 : 0.90   Partie 2 : 1.43 (20h41-21h18)       Partie 1 : 0.90   Partie 2 :  1.59  (20h14-21h10)     1.14       Merc. 10     Partie 1 : 0.87   Partie 2 : 1.25 (20h39-21h15)       Partie 1 : 0.80   Partie 2 :  1.39  (20h09-21h06)     1.26       Jeudi 11     Partie 1 : 0.89   Partie 2 : 1.26 (20h40-21h15)       Partie 1 : 0.89   Partie 2 :  1.63  (20h13-21h16)     1.22       Vend.12     Partie 1 : 0.52 (Castaldi)   Partie 2 : 0.74 (Castaldi)       Partie 1 : 0.76   Partie 2 :  1.11     1.04         Lundi 15   JT = Editions spéciales Notre Dame au même moment       Partie 1 : 0.56   Partie 2 : 1.00 (20h42-21h16)       Partie 1 : 0.67   Partie 2 : 0.99 (20h10-21h10)     1.25       Mardi 16     Partie 1 : 0.87   Partie 2 : 1.29 (20h41-21h17)       Partie 1 : 0.82   Partie 2 : 1.30 (20h08-21h10)     1.45       Merc. 17     Partie 1 : 0.85   Partie 2 :  1.42  (20h41-21h17)       Partie 1 : 0.76   Partie 2 : 1.33 (20h12-21h09)      1.28       Jeudi 18     Partie 1 : 0.89   Partie 2 : 1.19 (20h40-21h17)       Partie 1 : 0.72   Partie 2 :  1.36  (20h12-21h14)     1.18       Vend. 19     Partie 1 : 0.54 (Castaldi)   Partie 2 : 0.67 (Castaldi)       Partie 1 : 0.66   Partie 2 :  1.10     1.02       Lundi 22     Partie 1 : 0.90 (Direct)   Partie 2 :  1.50  (Direct)       Partie 1 : 0.37 (Best of)   Partie 2 : 0.78 (Best of)     0.82 (Best of)       Mardi 23     Partie 1 : 0.92 (Direct)   Partie 2 :   1.36   (Direct)       Partie 1 : 0.40 (Best of)   Partie 2 : 0.88 (Best of)      0.79 (Best of)       Merc. 24     Partie 1 : 1.04 (Direct)   Partie 2 :   1.35  (Direct)       Partie 1 : 0.51 (Best of)   Partie 2 : 0.88 (Best of)     0.74 (Best-of)       Jeudi 25     Partie 1 : 0.86 (Direct)   Grande Rassrah:   1.22   (Direct)       Partie 1 : 0.29 (Best of)   Partie 2 : 0.57 (Best of)     0.33 (Best of)       Vend. 26     Partie 1 : 0.80 (Direct)   Partie 2 :  1.08  (Direct)       Partie 1 : 0.42 (Best of)   Partie 2 : 0.64 (Best of)     0.63 (Best of)       Lundi 29     Partie 1 : 0.88   Partie 2 : 1.40 (20h44-21h17)       Partie 1 : 0.85   Partie 2 :  1.41 (20h15-21h18)      1.04       Mardi 30     Partie 1 : 0.75   Partie 2 : 1.08       Partie 1 : 0.68   Partie 2 :  1.33     1.11
+p77
+aa(lp78
+VMARS 2019   
+p79
+aV   QUOTIDIEN   C À VOUS       Vend. 01     Partie 1 : 0.70 (Castaldi)   Partie 2 : 0.79 (Castaldi)       Partie 1 : 0.61 (best of)   Partie 2 : 0.80 (best of)     1.26       Lundi 04     Partie 1 : 0.81   Partie 2 : 1.13 (20h37-21h23!)       Partie 1 : 0.91   Partie 2 :  1.49  (20h14-21h17!)     1.37       Mardi 05     Partie 1 : 0.89   Partie 2 : 1.34 (20h43-21h23!)       Partie 1 : 0.84   Partie 2 :  1.36  (20h14-21h08)     1.26       Merc. 06     Partie 1 : 0.55 (best of)   Partie 2 : 0.76 (best of)       Partie 1 : 0.96   Partie 2 :  1.46     1.34       Jeudi 07     Partie 1 : 0.52 (best of)   Partie 2 : 0.70 (best of)       Partie 1 : 0.90   Partie 2 : 1.37     1.40       Vend. 08     Partie 1 : 0.47 (best of)   Partie 2 : 0.47 (best of)       Partie 1 : 0.76   Partie 2 :  1.26     1.24       Lundi 11     Partie 1 : 0.99   Partie 2 : 1.31       Partie 1 : 0.93   Partie 2 :  1.59     1.37       Mardi 12     Partie 1 : 0.98   Partie 2 : 1.35       Partie 1 : 0.97   Partie 2 :  1.39     1.27       Merc. 13     Partie 1 : 0.90   Partie 2 : 1.00       Partie 1 : 0.91   Partie 2 :  1.40     1.30       Jeudi 14   0.90     Partie 1 : 0.90   Partie 2 :  1.58     1.36       Vend. 15     Partie 1 : 0.58 (Castaldi)   Partie 2 : 0.65 (Castaldi)       Partie 1 : 0.99   Partie 2 :  1.20     1.20       Lundi 18     Partie 1 : 0.89   Partie 2 : 1.27       Partie 1 : 0.95   Partie 2 :  1.62     1.26       Mardi 19     Partie 1 : 0.78   Partie 2 : 1.27       Partie 1 : 0.91   Partie 2 :  1.48     1.29       Merc. 20     Partie 1 : 0.95   Partie 2 : 1.34       Partie 1 : 0.94   Partie 2 :  1.51     1.35       Jeudi 21     Partie 1 : 0.93   Partie 2 : 1.19       Partie 1 : 0.89   Partie 2 :  1.51     1.21       Vend. 22     Partie 1 : 0.53 (Castaldi)   Partie 2 : 0.65 (Castaldi)       Partie 1 : 0.69   Partie 2 : 1.02     1.11       Lundi 25     Partie 1 : 1.02   Partie 2 : 1.11       Partie 1 : 0.88   Partie 2 :  1.61     1.26       Mardi 26     Partie 1 : 0.88   Partie 2 : 1.29       Partie 1 : 0.79   Partie 2 :  1.42     1.23       Merc. 27     Partie 1 : 0.90   Partie 2 : 1.20       Partie 1 : 0.87   Partie 2 :  1.46     1.42       Jeudi 28     Partie 1 : 0.89   Partie 2 : 1.32       Partie 1 : 0.78   Partie 2 :  1.50     1.22       Vend. 29     Partie 1 : 0.60 (Castaldi)   Partie 2 : 0.79 (Castaldi)       Partie 1 : 0.76   Partie 2 :  1.19     1.15
+p80
+aa(lp81
+VFÉVRIER   2019     
+p82
+aV   QUOTIDIEN   C À VOUS       Vend. 01     Partie 1 (Castaldi) : 0.81   Partie 2 (Castaldi) : 0.89       Partie 1 : 0.95   Partie 2 : 1.35     1.41       Lundi 04     Partie 1 : 1.05   Partie 2 : 1.57 (20h38-21h21!)       Partie 1 : 1.26   Partie 2 :  1.87  (20h14-21h12)     1.27       Mardi 05     Partie 1 : 0.89   Partie 2 : 1.39       Partie 1 : 1.02   Partie 2 :  1.57     1.27       Merc. 06     Partie 1 : 0.93   Partie 2 : 1.30 (20h39-21h18)       Partie 1 : 1.06   Partie 2 :  1.55  (20h13-21h06)     1.38       Jeudi 07     Partie 1 : 1.01   Partie 2 : 1.27 (20h37-21h14)       Partie 1 : 0.93   Partie 2 :  1.85  (20h12-21h13)     1.39       Vend. 08     Partie 1 (Castaldi) : 0.59   Partie 2 (Castaldi) : 0.79       Partie 1 : 0.73 (Salia Brakhlia)    Partie 2 : 0.97 (Salia Brakhlia)      1.25       Lundi 11     Partie 1 : 0.98   Partie 2 : 1.29 (20h38-21h17)       Partie 1 : 1.02   Partie 2 :  1.63  (20h11-21h10)     1.35       Mardi 12     Partie 1 : 0.89   Partie 2 : 1.23 (20h41-21h11)       Partie 1 : 0.93   Partie 2 :  1.71  (20h13-21h10)     1.36       Merc. 13     Partie 1 : 0.83   Partie 2 : 1.18 (20h40-21h15)       Partie 1 : 0.91   Partie 2 :  1.47  (20h11-21h05)      1.30       Jeudi 14     Partie 1 : 0.86   Partie 2 : 1.14 (20h40-21h20!)       Partie 1 : 0.99   Partie 2 :  1.60  (20h13-21h15!)     1.12       Vend. 15     Partie 1 : 0.71 (Castaldi)   Partie 2 : 0.97 (Castaldi)       Partie 1 : 0.92   Partie 2 : 1.22     1.31       Lundi 18     Partie 1 : 0.89   Partie 2 : 1.23 (20h40- 21h27! )       Partie 1 : 1.07   Partie 2 :  1.58  (20h13-21h08)     1.45       Mardi 19     Partie 1 : 0.93   Partie 2 : 0.98 (20h11-20h38*)       Partie 1 : 1.02   Partie 2 :  1.50  (20h12-21h13)     1.32       Merc. 20     Partie 1 : 0.78   Partie 2 : 1.18 (20h41-21h16)       Partie 1 : 0.98   Partie 2 :  1.57  (20h06-21h08)     1.29       Jeudi 21     Partie 1 : 0.84   Partie 2 : 1.07 (20h42-21h16)       Partie 1 : 0.92   Partie 2 :  1.47  (20h12-21h11)     1.24       Vend. 22     Partie 1 : 0.60 (Castaldi)   Partie 2 : 0.63 (Castaldi)       Partie 1 : 0.84   Partie 2 : 1.08     1.39       Lundi 25     Partie 1 : 1.03   Partie 2 : 1.38       Partie 1 : 0.69 (best of)   Partie 2 : 1.02 (best of)     1.39       Mardi 26     Partie 1 : 1.03   Partie 2 :  1.24       Partie 1 : 0.47 (best of)   Partie 2 : 0.86 (best of)     1.23       Merc. 27     Partie 1 : 0.93   Partie 2 : 1.27       Partie 1 : 0.50 (best of)   Partie 2 : 0.89 (best of)     1.38       Jeudi 28     Partie 1 : 1.00   Partie 2 : 1.19       Partie 1 : 0.46 (best of)   Partie 2 : 0.79 (best of)     1.35             * Début du prime Touche pas à mon Kendji vers 20h45...(contre très régulièrement 21h25 pour les autres programmes de "première" partie de soirée).
+p83
+aa(lp84
+VJANVIER   2019     
+p85
+aV   QUOTIDIEN   C À VOUS       Lundi 07     Partie 1 : 1.02   Partie 2 : 1.50 (20h37-21h18)       Partie 1 : 1.06   Partie 2 :  1.67   (20h11-21h19)     1.33       Mardi 08     Partie 1 : 1.00 (19h49-20h29)   Partie 2 :  1.35  (20h36-21h20!)       Partie 1 : 0.85 (19h26-20h05)   Partie 2 : 1.27 (20h14-21h11)     1.31       Merc. 09     Partie 1 : 1.03 (19h40-20h29)   Partie 2 : 1.34 (20h37-21h14)       Partie 1 : 0.88 (19h26-20h04)   Partie 2 : 1.37 (20h10-21h04)     1.39       Jeudi 10     Partie 1 : 0.95 (19h39-20h29)   Partie 2 : 1.24 (20h37-21h17)       Partie 1 : 0.88 (19h27-20h06)   Partie 2 :  1.46  (20h14-21h11)     1.38       Vend. 11     Partie 1 : 0.49 (Castaldi)   Partie 2 : 0.67 (Castaldi)       Partie 1 : 0.83   Partie 2 : 0.99     1.23       Lundi 14     Partie 1 : 1.03   Partie 2 : 1.30 (20h38-21h19)       Partie 1 : 0.89   Partie 2 :  1.54  (20h15-21h15)       1.43         Mardi 15     Partie 1 : 1.01   Partie 2 :  1.38  (20h37-21h17)       Partie 1 : 0.83   Partie 2 : 1.27 (20h10-21h10)     1.37       Mercredi 16     Partie 1 : 0.93   Partie 2 : 1.31 (20h38-21h11)       Partie 1 : 0.91   Partie 2 :  1.45  (20h16-21h10)     1.39       Jeudi 17     Partie 1 : 1.20   Partie 2 : 1.34 (20h39-21h16)       Partie 1 : 0.93   Partie 2 :  1.55  (20h15-21h18!)     1.18         Vendredi 18       Partie 1 : 0.51 (Castaldi)   Partie 2 : 0.88 (Castaldi)       Partie 1 : 0.69   Partie 2 : 1.08     1.40       Lundi 21     Partie 1 : 1.06   Partie 2 : 1.38 (20h38-21h19)       Partie 1 : 1.00   Partie 2 :  1.54  (20h09-21h16)     1.44       Mardi 22     Partie 1 : 1.03   Partie 2 : 1.30       Partie 1 : 0.91   Partie 2 : 1.34     1.48       Mercredi 23     Partie 1 : 1.09   Partie 2 : 1.36 (20h39-21h20!)       Partie 1 : 0.94   Partie 2 : 1.40 (20h09-21h07)     1.56       Jeudi 24     Partie 1 : 1.15   Partie 2 :   1.59  (20h39- 21h24! )       Partie 1 : 0.95   Partie 2 : 1.55 (20h13-21h12)     1.38       Vendredi 25     Partie 1 : 0.75 (Castaldi)   Partie 2 : 0.87 (Castaldi)       Partie 1 : 0.90   Partie 2 : 1.18     1.34       Lundi 28     Partie 1 : 1.09   Partie 2 : 1.41 (20h38-21h16)       Partie 1 : 1.03   Partie 2 :  1.62  (20h12-21h16)     1.32       Mardi 29     Partie 1 : 1.09   Partie 2 : 1.44 (20h36-21h15)       Partie 1 : 1.08   Partie 2 :  1.67  (20h13-21h07)     1.33       Merc. 30     Partie 1 : 1.01   Partie 2 : 1.23 (20h38-21h15)       Partie 1 : 0.95   Partie 2 : 1.41 (20h11-21h08)     1.52       Jeudi 31     Partie 1 : 0.98   Partie 2 : 1.34 (20h38-21h16)       Partie 1 : 1.13   Partie 2 :  1.74  (20h10-21h12)     1.31
+p86
+aa(lp87
+VDECEMBRE   2018     
+p88
+aV   QUOTIDIEN   C À VOUS       Lundi 03     Partie 1 : 0.84 (19h39-20h32)   Partie 2 : 1.13 (20h41- 21h22! )       Partie 1 : 1.06 (19h27-20h07)    Partie 2 :  1.69  (20h14-21h12)     1.49       Mardi 04     Partie 1 : 0.91 (19h39-20h29)   Partie 2 : 1.37 (20h38- 21h21! )       Partie 1 : 1.00 (19h26-20h04)   Partie 2 :  1.57  (20h11-21h14)     1.54       Merc. 05     Partie 1 : 0.92    Partie 2 : 1.12 (20h38-21h18)       Partie 1 : 0.97    Partie 2 : 1.53 (20h10-21h10)       1.55             Jeudi 06     Partie 1 : 0.93   Partie 2 : 1.37       Partie 1 : 0.90   Partie 2 : 1.45       1.56             Vend. 07 :   Partie 2 : 0.79  (Benaïm)     Partie 1 : 0.77   Partie 2 : 1.33     1.52       Lundi 10     Partie 1 : 0.67 (19h39-20h29)   Partie 2 : 1.20 (20h38- 21h35!!! )       Partie 1 : 0.87 (19h26-20h03)   Partie 2 : 1.26 (20h10-21h08)       1.59   (record)         Mardi 11     Partie 1 : 0.85 (19h40-20h29)   Partie 2 : 1.25 (20h37-21h17)       Partie 1 : 1.02 (19h26-20h06)   Partie 2 : 1.51 (20h13-21h09)     1.57       Merc. 12     Partie 1 : 0.86 (19h39-20h29)   Partie 2 : 1.26 (20h38-21h14)       Partie 1 : 0.94 (19h26-20h06)   Partie 2 :  1.53  (20h14-21h08)     1.47       Jeudi 13     Partie 1 : 0.96 (19h38-20h30)   Partie 2 : 1.21 (20h39-21h17)       Partie 1 : 0.99 (19h26-20h01)   Partie 2 :  1.54  (20h09-21h12)     1.41       Vend. 14    Partie 2, courte cause BTP : 0.75 (Benaïm)     Partie 1 : 0.80 (Salhia Brakhlia)   Partie 2, courte cause hand : 1.00     1.29       Lundi 17     Partie 1 : 0.94 (19h39-20h29)   Partie 2 : 1.60 (20h37-21h18)       Partie 1 : 1.00 (19h26-20h02)   Partie 2 :  1.80  (20h09-21h19)     1.52       Mardi 18     Partie 1 : 0.98 (19h41-20h29)   Partie 2 : 1.34 (20h37-21h16)       Partie 1 : 0.86 (19h26-20h02)   Partie 2 : 1.37 (20h10-21h06)     1.47       Merc. 19     Partie 1 : 1.00 (19h40-20h02)   Partie 2 : 1.00 (20h09-20h30; prime Baba en Laponie ensuite)       Partie 1 : 1.03 (19h26-20h03)   Partie 2 :  1.56  (20h10-21h14)     1.33       Jeudi 20     Partie 1 : 0.86 (19h40-20h29)   Partie 2 : 1.42 (20h37- 21h27! )       Partie 1 : 0.96 (19h28-20h06)   Partie 2 :  1.54  (20h12-21h06)     1.29       Vend. 21     Partie 1 : 0.68 (Castaldi)   Partie 2 : 1.00 (Castaldi)       Partie 1 : 0.89   Partie 2 :  1.30     1.12       Lundi 24   best-of   best-of           Mardi 25   best-of   best-of           Merc. 26   best-of   best-of           Jeudi 27   best-of   best-of           Vend. 28   best-of   best-of
+p89
+aaVNOVEMBRE
+p90
+aVOCTOBRE
+p91
+aVSEPTEMBRE
+p92
+aVJUIN
+p93
+aVMAI
+p94
+aVAVRIL
+p95
+aVMARS
+p96
+aVFÉVRIER
+p97
+aVJANVIER
+p98
+aVDECEMBRE
+p99
+aV2019
+p100
+aV2019
+p101
+aV2019
+p102
+aV2019
+p103
+aV2019
+p104
+aV2019
+p105
+aV2019
+p106
+aV2019
+p107
+aV2019
+p108
+aV2018
+p109
+a(lp110
+(S'Vend. 01 '
+p111
+S'    Partie 1 : 0.38 (Best of)   Partie 2 : 0.54 (Best of)       Partie 1 : 0.42 (Best of)   Partie 2 : 0.67 (Best of)     1.44'
+p112
+tp113
+aa(lp114
+(S'Mardi 01 '
+p115
+S'    Partie 1 : 0.89   Partie 2, 20h38-21h17 : 1.12       Partie 1 : 0.73   Partie 2, 20h13-21h14 :  1.38     1.17       '
+p116
+tp117
+a(S'Merc. 02 '
+p118
+S'    Partie 1 : 0.80   Partie 2, 20h37-21h15 : 1.15       Partie 1 : 0.80   Partie 2, 20h11-21h15 :  1.44     1.10       '
+p119
+tp120
+a(S'Jeudi 03 '
+p121
+S'    Partie 1, 19h40-20h36 : 0.80   Prime Aznavour (Hanouna) : 0.78       Partie 1 : 0.71   Partie 2, 20h13-21h14 :  1.48     1.08       '
+p122
+tp123
+a(S'Vend. 04 '
+p124
+S'    Partie 1 : 0.51 (Castaldi)   Partie 2 : 0.79 (Castaldi)       Partie 1 : 0.77   Partie 2 :  1.06     1.03       '
+p125
+tp126
+a(S'Lundi 07 '
+p127
+S'    Partie 1 : 0.94   Partie 2, 20h37-21h16 : 1.20       Partie 1 : 0.91   Partie 2, 20h15-21h15 :  1.59     1.23       '
+p128
+tp129
+a(S'Mardi 08 '
+p130
+S'    Partie 1 : 0.72 (Castaldi)   Partie 2 : 0.96 (Castaldi)       Partie 1 : 0.91   Partie 2 :  1.74     1.22       '
+p131
+tp132
+a(S'Merc. 09 '
+p133
+S'    Partie 1 : 0.82 (Castaldi)   Partie 2 : 1.04 (Castaldi)       Partie 1 : 0.86   Partie 2 :  1.56     1.25       '
+p134
+tp135
+a(S'Jeudi 10 '
+p136
+S'    Partie 1 : 0.87   Partie 2, 20h40-21h36 (Prime) : 1.20       Partie 1 : 0.87   Partie 2 :  1.48     1.21       '
+p137
+tp138
+a(S'Vend. 11 '
+p139
+S'    Partie 1 : 0.57 (Castaldi)   Partie 2 : 0.65 (Castaldi)       Partie 1: 0.73   Partie 2 :  1.29     1.18       '
+p140
+tp141
+a(S'Lundi 14 '
+p142
+S'    Partie 1 : 0.88   Partie 2, 20h36-21h13 : 1.12       Partie 1 : 0.93   Partie 2, 20h13-21h16 :  1.61     1.35       '
+p143
+tp144
+a(S'Mardi 15 '
+p145
+S'    Partie 1 : 1.00   Partie 2, 20h40-21h15 : 1.40       Partie 1 : 0.85   Partie 2, 20h10-21h12 :  1.54     1.15       '
+p146
+tp147
+a(S'Merc. 16 '
+p148
+S'    Partie 1 : 0.88   Partie 2, 20h43-21h16 : 1.35       Partie 1: 0.88   Partie 2, 20h12-21h11 :  1.46     1.39       '
+p149
+tp150
+a(S'Jeudi 17 '
+p151
+S'    Partie 1 : 0.89   Partie 2 (Prime) : 1.08       Partie 1 : 0.87   Partie 2 :  1.71     1.10       '
+p152
+tp153
+a(S'Vend. 18 '
+p154
+S'    Partie 1 : 0.57(Castaldi)   Partie 2 : 0.83 (Castaldi)       Partie 1 : 0.92   Partie 2 :  1.22     1.09       '
+p155
+tp156
+a(S'Lundi 21 '
+p157
+S'    Partie 1 : 0.91   Partie 2, 20h43-21h17 : 1.29       Partie 1 : 0.88   Partie 2, 20h13-21h15 :  1.62     1.13       '
+p158
+tp159
+a(S'Mardi 22 '
+p160
+S'    Partie 1 : 0.87   Partie 2, 20h44-21h15 : 1.16       Partie 1 : 0.96   Partie 2, 20h14-21h14 :  1.62     1.23       '
+p161
+tp162
+a(S'Merc. 23 '
+p163
+S'    Partie 1 : 0.94   Partie 2, 20h44-21h14 : 1.30       Partie 1 : 0.87   Partie 2, 20h14-21h13 :  1.50     1.12       '
+p164
+tp165
+a(S'Jeudi 24 '
+p166
+S'    Partie 1 : 0.80   Partie 2, 20h46-21h36 (Prime) : 0.97       Partie 1 : 0.96   Partie 2 :  1.50     1.12       '
+p167
+tp168
+a(S'Vend. 25 '
+p169
+S'    Partie 1 : 0.61 (Castaldi)   Partie 2 : 0.84 (Castaldi)       Partie 1 : 0.86   Partie 2 :  1.29     1.13       '
+p170
+tp171
+a(S'Lundi 28 '
+p172
+S'    Partie 1 : 1.00   Partie 2, 20h42-21h11 :  1.30       Partie 1 : 0.68 (Bestof)   Partie 2 : 1.09 (Bestof)     1.31       '
+p173
+tp174
+a(S'Mardi 29 '
+p175
+S'    Partie 1 : 1.09   Partie 2 :  1.49       Partie 1 : 0.59 (Bestof)   Partie 2 : 0.89 (Bestof)     1.30       '
+p176
+tp177
+a(S'Merc. 30 '
+p178
+S'    Partie 1 : 0.89   Partie 2 : 1.12       Partie 1 : 0.45 (Best of)   Partie 2 : 0.80 (Bestof)     1.31       '
+p179
+tp180
+a(S'Jeudi 31 '
+p181
+S'    Partie 1 : 0.73   Partie 2: 0.96       Partie 1 :  0.39  (Best of)   Partie 2 : 0.70 (Best of)     1.19'
+p182
+tp183
+aa(lp184
+(S'Lundi 02 '
+p185
+S'    Partie 1, 19h45-20h38 : 0.97   Partie 2, 20h45-21h17 : 1.25       Partie 1, 19h26-20h07 : 0.74   Partie 2, 20h15-21h17 :  1.28     0.96 million       '
+p186
+tp187
+a(S'Mardi 03 '
+p188
+S'    Partie 1 : 0.87   Partie 2, 20h44-21h17 : 1.10       Partie 1 : 0.77   Partie 2, 20h17-21h17 :  1.25     0.89       '
+p189
+tp190
+a(S'Merc. 04 '
+p191
+S'    Partie 1 : 0.94   Partie 2, 20h42-21h16 :  1.28       Partie 1 : 0.62   Partie 2, 20h11-21h04 : 1.16     0.91       '
+p192
+tp193
+a(S'Jeudi 05 '
+p194
+S'    Partie 1 : 0.87   Partie 2, 20h42-21h15 : 1.16       Partie 1 : 0.68   Partie 2, 20h12-21h14 :  1.23     0.89       '
+p195
+tp196
+a(S'Vend. 06 '
+p197
+S'    Partie 1 (Castaldi) : 0.51   Partie 2 (Castaldi) : 0.67       Partie 1 : 0.59   Partie 2 : 0.98     0.86       '
+p198
+tp199
+a(S'Lundi 09 '
+p200
+S'    Partie 1 : 0.85   Partie 2, 20h41-21h15: 1.23       Partie 1 : 0.69   Partie 2, 20h11-21h12 :  1.32     0.99       '
+p201
+tp202
+a(S'Mardi 10 '
+p203
+S'    Partie 1 : 0.83   Partie 2, 20h39-21h13 : 1.10       Partie 1 : 0.73   Partie 2, 20h11-21h13 :  1.29     0.81       '
+p204
+tp205
+a(S'Merc. 11 '
+p206
+S'    Partie 1 : 0.82   Partie 2, 20h41-21h13 : 1.22       Partie 1 : 0.72   Partie 2, 20h14-21h15:  1.23     1.03       '
+p207
+tp208
+a(S'Jeudi 12 '
+p209
+S'    Partie 1 , 19h43-20h38 : 0.76   Partie 2, 20h45-21h41 (Prime) : 0.95       Partie 1 : 0.57   Partie 2, 20h09-21h06 :  1.35     0.81       '
+p210
+tp211
+a(S'Vend. 13 '
+p212
+S'    Partie 1 :   0.42  (Castaldi)   Partie 2 :  0.56   (Castaldi)       Partie 1 : 0.57   Partie 2 :  0.97     0.83       '
+p213
+tp214
+a(S'Lundi 16 '
+p215
+S'    Partie 1 : 0.85   Partie 2, 20h41-21h15 : 1.23       Partie 1 : 0.75   Partie 2, 20h12-21h12 :  1.48     0.90       '
+p216
+tp217
+a(S'Mardi 17 '
+p218
+S'    Partie 1 : 0.80   Partie 2, 20h43-21h13 : 1.16       Partie 1 : 0.68   Partie 2, 20h13-21h09 :  1.27     0.99       '
+p219
+tp220
+a(S'Merc. 18 '
+p221
+S'    Partie 1 : 0.85   Partie 2, 20h39-21h15 : 1.08       Partie 1 : 0.75   Partie 2, 20h10-21h11 :  1.40     0.95       '
+p222
+tp223
+a(S'Jeudi 19 '
+p224
+S'    Partie 1 : 0.81   Partie 2 (Prime) : 1.05       Partie 1 : 0.74   Partie 2 :  1.34     0.98       '
+p225
+tp226
+a(S'Vend. 20 '
+p227
+S'    Partie 1 :  0.45  (Castaldi)   Partie 2 : 0.76 (Castaldi)       Partie 1 : 0.71   Partie 2 :  1.18     0.78       '
+p228
+tp229
+a(S'Lundi 23 '
+p230
+S'    Partie 1 : 0.94   Partie 2, 20h46-21h14 :  1.53       Partie 1 : 0.78   Partie 2 , 20h13-21h16 : 1.50     1.00       '
+p231
+tp232
+a(S'Mardi 24 '
+p233
+S'    Partie 1 : 0.76   Partie 2, 20h39-21h13: 1.20       Partie 1 : 0.79   Partie 2, 20h13-21h13 :  1.36     1.06       '
+p234
+tp235
+a(S'Merc. 25 '
+p236
+S'    Partie 1 : 0.85   Partie 2, 20h39-21h15 : 1.14       Partie 1 : 0.77   Partie 2, 20h15-21h14 :  1.45     1.16       '
+p237
+tp238
+a(S'Jeudi 26 '
+p239
+S'    Partie 1 : 0.96   Partie 2, 20h44-21h42 (Prime) : 1.08       Partie 1 : 0.79   Partie 2 :  1.38     1.00       '
+p240
+tp241
+a(S'Vend. 27 '
+p242
+S'    Partie 1 :  0.46  (Castaldi)   Partie 2 : 0.78 (Castaldi)       Partie 1 : 0.78   Partie 2 :  1.18     1.01       '
+p243
+tp244
+a(S'Lundi 30 '
+p245
+S'    Partie 1 : 0.89   Partie 2, 20h39-21h17 : 1.26       Partie 1 : 0.79   Partie 2, 20h14-21h09 :  1.44     1.13'
+p246
+tp247
+aa(lp248
+(S'Lundi 03 '
+p249
+S'    Partie 1 : 0.92   Partie 2 : 1.36 (20h45-21h17)       Partie 1 : 0.80   Partie 2 :  1.40  (20h13-21h09)     1.00       '
+p250
+tp251
+a(S'Mardi 04 '
+p252
+S'    Partie 1 : 0.94   Partie 2 : 1.26 (20h45-21h18)       Partie 1 : 0.76   Partie 2 :  1.40  (20h12-21h15)     0.95       '
+p253
+tp254
+a(S'Merc. 05 '
+p255
+S'    Partie 1 : 0.90   Partie 2 : 1.35 (20h45-21h18)       Partie 1 : 0.85   Partie 2 :  1.37  (20h13-21h08)     1.17       '
+p256
+tp257
+a(S'Jeudi 06 '
+p258
+S'    Partie 1 : 0.82   Partie 2 :  1.25  (20h45-21h17)       Partie 1 : 0.69   Partie 2 : 1.24 (20h14-21h19!)     1.02       '
+p259
+tp260
+a(S'Vend. 07 '
+p261
+S'    Partie 1 : 0.47 (Castaldi)   Partie 2 : 0.59 (Castaldi)       Partie 1 : 0.66   Partie 2 : 1.00     1.11       '
+p262
+tp263
+a(S'Lundi 10 '
+p264
+S'    Partie 1 : 0.98   Partie 2 : 1.54 (20h46-21h16)       Partie 1 : 0.91   Partie 2 :  1.59  (20h15-21h18)     1.13       '
+p265
+tp266
+a(S'Mardi 11 '
+p267
+S'    Partie 1 : 0.93   Partie 2 : 1.33 (20h38-21h15)       Partie 1 : 0.87   Partie 2 :  1.51  (20h11-21h13)     1.15       '
+p268
+tp269
+a(S'Merc. 12 '
+p270
+S'    Partie 1 : 0.81   Partie 2 : 1.14 (20h44-21h13)       Partie 1 : 0.95   Partie 2 :  1.40  (20h15-21h13)     1.15       Jeudi 13'
+p271
+tp272
+aa(lp273
+(S'Merc. 01 '
+p274
+S'    Partie 1 : 0.80   Partie 2 : 1.06 (20h45-21h13)       Partie 1 : 0.83   Partie 2 :  1.36  (20h11-21h09)     1.04       '
+p275
+tp276
+a(S'Jeudi 02 '
+p277
+S'    Partie 1 : 0.84   Partie 2 :Grande Rassrah 1.33.       Partie 1 : 0.76   Partie 2 :  1.48  (20h12-21h17)     1.21       '
+p278
+tp279
+a(S'Vend. 03 '
+p280
+S'    Partie 1 : 0.49 (best of)   Partie 2 : 0.58 (best of)       Partie 1 : 0.74   Partie 2 :  1.13     1.07       '
+p281
+tp282
+a(S'Lundi 06 '
+p283
+S'    Partie 1 : 1.03   Partie 2 : 1.29(20h44-21h17)       Partie 1 : 0.84   Partie 2 :  1.65  (20h14-21h15)     1.09       '
+p284
+tp285
+a(S'Mardi 07 '
+p286
+S'    Partie 1 : 0.77   Partie 2 : 1.08(20h45-21h16)       Partie 1 : 0.76   Partie 2 :  1.38 (20h13-21h16)     1.09       '
+p287
+tp288
+a(S'Merc. 08 '
+p289
+S'    Partie 1 : 1.06   Partie 2 : 1.42(20h39-21h17)       Partie 1 : 1.03   Partie 2 :  1.54 (20h10- 21h03 )     1.28       '
+p290
+tp291
+a(S'Jeudi 09 '
+p292
+S'    Partie 1 : 1.03   Partie 2 : 1.67 (20h43-21h15)       Partie 1 : 0.90   Partie 2 :  1.71  (20h10-21h08)     1.27       '
+p293
+tp294
+a(S'Vend. 10 '
+p295
+S'    Partie 1 : 0.69 (Castaldi)   Partie 2 : 0.92 (Castaldi)       Partie 1 : 0.67   Partie 2 : 1.11     1.17       '
+p296
+tp297
+a(S'Lundi 13 '
+p298
+S'    Partie 1 : 1.01   Partie 2 : 1.48 (20h44-21h15)       Partie 1 : 0.86   Partie 2 :  1.69  (20h14-21h14)     1.11       '
+p299
+tp300
+a(S'Mardi 14 '
+p301
+S'    Partie 1 : 0.84   Partie 2 :  1.49  (20h46- 21h20! )       Partie 1 : 0.71   Partie 2 : 1.39 (20h16-21h12)     1.04       '
+p302
+tp303
+a(S'Merc. 15 '
+p304
+S'    Partie 1 : 0.93   Partie 2 : 1.32 (20h46-21h15)       Partie 1 : 0.66   Partie 2 :  1.37  (20h11-21h11)     1.01       '
+p305
+tp306
+a(S'Jeudi 16 '
+p307
+S'    Partie 1 : 0.91   Partie 2 : 1.25 (20h46-21h15)       Partie 1 : 0.79   Partie 2 :  1.49  (20h14-21h08)     0.99       '
+p308
+tp309
+a(S'Vend. 17 '
+p310
+S'    Partie 1 : 0.58 (Castaldi)   Partie 2 : 0.91 (Castaldi)       Partie 1 : 0.69   Partie 2 : 1.13     1.20       '
+p311
+tp312
+a(S'Lundi 20 '
+p313
+S'    Partie 1 : 0.98   Partie 2 : 1.42 (20h45- 21h19! )       Partie 1 : 0.79   Partie 2 :  1.56  (20h07-21h11)     1.26       '
+p314
+tp315
+a(S'Mardi 21 '
+p316
+S'    Partie 1 : 0.93   Partie 2 : 1.37 (20h44-21h17)       Partie 1 : 0.84   Partie 2 :  1.46  (20h15-21h15)     1.05       '
+p317
+tp318
+a(S'Merc. 22 '
+p319
+S'    Partie 1 : 1.01   Partie 2 :  1.46 (20h45-21h15)       Partie 1 : 0.84   Partie 2 : 1.40 (20h14-21h09)     1.10       '
+p320
+tp321
+a(S'Jeudi 23 '
+p322
+S'    Partie 1 : 0.98   Partie 2 : 1.41 (20h46-21h17)       Partie 1 : 0.82   Partie 2 :  1.61  (20h14- 21h20! )     0.97       '
+p323
+tp324
+a(S'Vend. 24 '
+p325
+S'    Partie 1 : 0.46 (Castaldi)   Partie 2 : 0.74 (Castaldi)       Partie 1 : 0.67   Partie 2 :  0.99     0.93       '
+p326
+tp327
+a(S'Lundi 27 '
+p328
+S'    Partie 1 : 0.93   Partie 2 : 1.38 (20h46-21h17)       Partie 1 : 1.03   Partie 2 :  1.65  (20h12-21h08)     1.24       '
+p329
+tp330
+a(S'Mardi 28 '
+p331
+S'    Partie 1 : 0.90   Partie 2 : 1.37 (20h44-21h19)       Partie 1 : 0.80   Partie 2 :  1.46  (20h15-21h16)     1.05       '
+p332
+tp333
+a(S'Merc. 29 '
+p334
+S'    Partie 1 : 0.46 (best of)   Partie 2 : 0.74 (best of)       Partie 1 : 0.76   Partie 2 :  1.20     0.89       '
+p335
+tp336
+a(S'Jeudi 30 '
+p337
+S'    Partie 1 : 0.38 (best of)   Partie 2 : 0.49 (best of)       Partie 1 : 0.38 (best of)   Partie 2 : 0.56 (best of)     0.59  (best of)       '
+p338
+tp339
+a(S'Vend. 31 '
+p340
+S'    Partie 1 : 0.29 (best of)   Partie 2 : 0.49 (best of)       Partie 1 : 0.25 (best of)   Partie 2 : 0.46 (best of)     0.52  (best of)'
+p341
+tp342
+aa(lp343
+(S'Lundi 01 '
+p344
+S'    Partie 1 : 0.84   Partie 2 : 1.47 (20h40-21h12)       Partie 1 : 0.85   Partie 2 :  1.75  (20h12-21h14)     1.22       '
+p345
+tp346
+a(S'Mardi 02 '
+p347
+S'    Partie 1 : 0.84   Partie 2 : 1.29 (20h42-21h13)       Partie 1 : 0.84   Partie 2 :  1.47  (20h13-21h06)     1.26       '
+p348
+tp349
+a(S'Merc. 03 '
+p350
+S'    Partie 1 : 0.86   Partie 2: 1.34 (20h40-21h15)       Partie 1 : 0.84   Partie 2 :  1.56  (20h13-21h12)     1.29       '
+p351
+tp352
+a(S'Jeudi 04 '
+p353
+S'    Partie 1 : 1.02   Partie 2 : 1.30 ( 20h37-22h25, Prime spcial 9 ans )       Partie 1 : 0.84   Partie 2 :  1.49  (20h14-21h12)     1.11       '
+p354
+tp355
+a(S'Vend. 05 '
+p356
+S'    Partie 1 : 0.72 (Castaldi)   Partie 2 : 0.83 (Castaldi)       Partie 1 : 0.80   Partie 2 :  1.21     1.10       '
+p357
+tp358
+a(S'Lundi 08 '
+p359
+S'    Partie 1 : 0.80 puis 0.89 (2 parties)   Partie 2 : 1.51 (20h41-21h19!)       Partie 1 : 0.84   Partie 2 :  1.70  (20h10-21h16)     1.19       '
+p360
+tp361
+a(S'Mardi 09 '
+p362
+S'    Partie 1 : 0.90   Partie 2 : 1.43(20h41-21h18)       Partie 1 : 0.90   Partie 2 :  1.59  (20h14-21h10)     1.14       '
+p363
+tp364
+a(S'Merc. 10 '
+p365
+S'    Partie 1 : 0.87   Partie 2 : 1.25(20h39-21h15)       Partie 1 : 0.80   Partie 2 :  1.39 (20h09-21h06)     1.26       '
+p366
+tp367
+a(S'Jeudi 11 '
+p368
+S'    Partie 1 : 0.89   Partie 2 : 1.26(20h40-21h15)       Partie 1 : 0.89   Partie 2 :  1.63  (20h13-21h16)     1.22       '
+p369
+tp370
+a(S'Vend.12 '
+p371
+S'    Partie 1 : 0.52 (Castaldi)   Partie 2 : 0.74 (Castaldi)       Partie 1 : 0.76   Partie 2 :  1.11     1.04         '
+p372
+tp373
+a(S'Lundi 15 '
+p374
+S'  JT =Editions spciales Notre Dame au mme moment       Partie 1 : 0.56   Partie 2 : 1.00 (20h42-21h16)       Partie 1 : 0.67   Partie 2 : 0.99 (20h10-21h10)     1.25       '
+p375
+tp376
+a(S'Mardi 16 '
+p377
+S'    Partie 1 : 0.87   Partie 2 : 1.29 (20h41-21h17)       Partie 1 : 0.82   Partie 2 : 1.30 (20h08-21h10)     1.45       '
+p378
+tp379
+a(S'Merc. 17 '
+p380
+S'    Partie 1 : 0.85   Partie 2 :  1.42 (20h41-21h17)       Partie 1 : 0.76   Partie 2 : 1.33 (20h12-21h09)     1.28       '
+p381
+tp382
+a(S'Jeudi 18 '
+p383
+S'    Partie 1 : 0.89   Partie 2 : 1.19(20h40-21h17)       Partie 1 : 0.72   Partie 2 :  1.36  (20h12-21h14)     1.18       '
+p384
+tp385
+a(S'Vend. 19 '
+p386
+S'    Partie 1 : 0.54 (Castaldi)   Partie 2 : 0.67 (Castaldi)       Partie 1 : 0.66   Partie 2 :  1.10     1.02       '
+p387
+tp388
+a(S'Lundi 22 '
+p389
+S'    Partie 1 : 0.90 (Direct)   Partie 2 :  1.50  (Direct)       Partie 1 : 0.37(Bestof)   Partie 2 : 0.78 (Bestof)     0.82 (Best of)       '
+p390
+tp391
+a(S'Mardi 23 '
+p392
+S'    Partie 1 : 0.92 (Direct)   Partie 2 : 1.36 (Direct)       Partie 1 : 0.40 (Best of)   Partie 2 : 0.88 (Best of)     0.79 (Best of)       '
+p393
+tp394
+a(S'Merc. 24 '
+p395
+S'    Partie 1 : 1.04(Direct)   Partie 2 :  1.35 (Direct)       Partie 1 : 0.51 (Best of)   Partie 2 : 0.88 (Best of)     0.74 (Best-of)       '
+p396
+tp397
+a(S'Jeudi 25 '
+p398
+S'    Partie 1 : 0.86 (Direct)   Grande Rassrah:  1.22 (Direct)       Partie 1 : 0.29 (Best of)   Partie 2 : 0.57 (Best of)     0.33 (Best of)       '
+p399
+tp400
+a(S'Vend. 26 '
+p401
+S'    Partie 1 : 0.80 (Direct)   Partie 2 :  1.08  (Direct)       Partie 1 : 0.42(Best of)   Partie 2 : 0.64(Best of)     0.63 (Best of)       '
+p402
+tp403
+a(S'Lundi 29 '
+p404
+S'    Partie 1 : 0.88   Partie 2 : 1.40 (20h44-21h17)       Partie 1 : 0.85   Partie 2 :  1.41 (20h15-21h18)     1.04       '
+p405
+tp406
+a(S'Mardi 30 '
+p407
+S'    Partie 1 : 0.75   Partie 2 : 1.08       Partie 1 : 0.68   Partie 2 :  1.33     1.11'
+p408
+tp409
+aa(lp410
+(S'Vend. 01 '
+p411
+S'    Partie 1 : 0.70 (Castaldi)   Partie 2 : 0.79 (Castaldi)       Partie 1 : 0.61 (best of)   Partie 2 : 0.80 (best of)     1.26       '
+p412
+tp413
+a(S'Lundi 04 '
+p414
+S'    Partie 1 : 0.81   Partie 2 : 1.13 (20h37-21h23!)       Partie 1 : 0.91   Partie 2 :  1.49  (20h14-21h17!)     1.37       '
+p415
+tp416
+a(S'Mardi 05 '
+p417
+S'    Partie 1 : 0.89   Partie 2 : 1.34 (20h43-21h23!)       Partie 1 : 0.84   Partie 2 :  1.36  (20h14-21h08)     1.26       '
+p418
+tp419
+a(S'Merc. 06 '
+p420
+S'    Partie 1 : 0.55(best of)   Partie 2 : 0.76(bestof)       Partie 1 : 0.96   Partie 2 :  1.46     1.34       '
+p421
+tp422
+a(S'Jeudi 07 '
+p423
+S'    Partie 1 : 0.52 (best of)   Partie 2 : 0.70 (best of)       Partie 1 : 0.90   Partie 2 : 1.37     1.40       '
+p424
+tp425
+a(S'Vend. 08 '
+p426
+S'    Partie 1 : 0.47 (best of)   Partie 2 : 0.47 (best of)       Partie 1 : 0.76   Partie 2 :  1.26     1.24       '
+p427
+tp428
+a(S'Lundi 11 '
+p429
+S'    Partie 1 : 0.99   Partie 2 : 1.31       Partie 1 : 0.93   Partie 2 :  1.59     1.37       '
+p430
+tp431
+a(S'Mardi 12 '
+p432
+S'    Partie 1 : 0.98   Partie 2 : 1.35       Partie 1 : 0.97   Partie 2 :  1.39     1.27       '
+p433
+tp434
+a(S'Merc. 13 '
+p435
+S'    Partie 1 : 0.90   Partie 2 : 1.00       Partie 1 : 0.91   Partie 2 :  1.40     1.30       '
+p436
+tp437
+a(S'Jeudi 14 '
+p438
+S'  0.90     Partie 1 : 0.90   Partie 2 :  1.58     1.36       '
+p439
+tp440
+a(S'Vend. 15 '
+p441
+S'    Partie 1 : 0.58 (Castaldi)   Partie 2 : 0.65 (Castaldi)       Partie 1 : 0.99   Partie 2 :  1.20     1.20       '
+p442
+tp443
+a(S'Lundi 18 '
+p444
+S'    Partie 1 : 0.89   Partie 2 : 1.27       Partie 1 : 0.95   Partie 2 :  1.62     1.26       '
+p445
+tp446
+a(S'Mardi 19 '
+p447
+S'    Partie 1 : 0.78   Partie 2 : 1.27       Partie 1 : 0.91   Partie 2 :  1.48     1.29       '
+p448
+tp449
+a(S'Merc. 20 '
+p450
+S'    Partie 1 : 0.95   Partie 2 : 1.34       Partie 1 : 0.94   Partie 2 :  1.51     1.35       '
+p451
+tp452
+a(S'Jeudi 21 '
+p453
+S'    Partie 1 : 0.93   Partie 2 : 1.19       Partie 1 : 0.89   Partie 2 :  1.51     1.21       '
+p454
+tp455
+a(S'Vend. 22 '
+p456
+S'    Partie 1 : 0.53 (Castaldi)   Partie 2 : 0.65 (Castaldi)       Partie 1 : 0.69   Partie 2 : 1.02     1.11       '
+p457
+tp458
+a(S'Lundi 25 '
+p459
+S'    Partie 1 : 1.02   Partie 2 : 1.11       Partie 1 : 0.88   Partie 2 :  1.61     1.26       '
+p460
+tp461
+a(S'Mardi 26 '
+p462
+S'    Partie 1 : 0.88   Partie 2 : 1.29       Partie 1 : 0.79   Partie 2 :  1.42     1.23       '
+p463
+tp464
+a(S'Merc. 27 '
+p465
+S'    Partie 1 : 0.90   Partie 2 : 1.20       Partie 1 : 0.87   Partie 2 :  1.46     1.42       '
+p466
+tp467
+a(S'Jeudi 28 '
+p468
+S'    Partie 1 : 0.89   Partie 2 : 1.32       Partie 1 : 0.78   Partie 2 :  1.50     1.22       '
+p469
+tp470
+a(S'Vend. 29 '
+p471
+S'    Partie 1 : 0.60 (Castaldi)   Partie 2 : 0.79 (Castaldi)       Partie 1 : 0.76   Partie 2 :  1.19     1.15'
+p472
+tp473
+aa(lp474
+(S'Vend. 01 '
+p475
+S'    Partie 1 (Castaldi) : 0.81   Partie 2 (Castaldi) : 0.89       Partie 1 : 0.95   Partie 2 : 1.35     1.41       '
+p476
+tp477
+a(S'Lundi 04 '
+p478
+S'    Partie 1 : 1.05   Partie 2 : 1.57 (20h38-21h21!)       Partie 1 : 1.26   Partie 2 :  1.87  (20h14-21h12)     1.27       '
+p479
+tp480
+a(S'Mardi 05 '
+p481
+S'    Partie 1 : 0.89   Partie 2 : 1.39       Partie 1 : 1.02   Partie 2 :  1.57     1.27       '
+p482
+tp483
+a(S'Merc. 06 '
+p484
+S'    Partie 1 : 0.93   Partie 2 : 1.30 (20h39-21h18)       Partie 1 : 1.06   Partie 2 :  1.55  (20h13-21h06)     1.38       '
+p485
+tp486
+a(S'Jeudi 07 '
+p487
+S'    Partie 1 : 1.01   Partie 2 : 1.27 (20h37-21h14)       Partie 1 : 0.93   Partie 2 :  1.85  (20h12-21h13)     1.39       '
+p488
+tp489
+a(S'Vend. 08 '
+p490
+S'    Partie 1 (Castaldi) : 0.59   Partie 2 (Castaldi) : 0.79       Partie 1 : 0.73(Salia Brakhlia)   Partie 2 : 0.97 (Salia Brakhlia)     1.25       '
+p491
+tp492
+a(S'Lundi 11 '
+p493
+S'    Partie 1 : 0.98   Partie 2 : 1.29 (20h38-21h17)       Partie 1 : 1.02   Partie 2 :  1.63  (20h11-21h10)     1.35       '
+p494
+tp495
+a(S'Mardi 12 '
+p496
+S'    Partie 1 : 0.89   Partie 2 : 1.23 (20h41-21h11)       Partie 1 : 0.93   Partie 2 :  1.71  (20h13-21h10)     1.36       '
+p497
+tp498
+a(S'Merc. 13 '
+p499
+S'    Partie 1 : 0.83   Partie 2 : 1.18 (20h40-21h15)       Partie 1 : 0.91   Partie 2 :  1.47 (20h11-21h05)     1.30       '
+p500
+tp501
+a(S'Jeudi 14 '
+p502
+S'    Partie 1 : 0.86   Partie 2 : 1.14 (20h40-21h20!)       Partie 1 : 0.99   Partie 2 :  1.60  (20h13-21h15!)     1.12       '
+p503
+tp504
+a(S'Vend. 15 '
+p505
+S'    Partie 1 : 0.71 (Castaldi)   Partie 2 : 0.97 (Castaldi)       Partie 1 : 0.92   Partie 2 : 1.22     1.31       '
+p506
+tp507
+a(S'Lundi 18 '
+p508
+S'    Partie 1 : 0.89   Partie 2 : 1.23 (20h40- 21h27! )       Partie 1 : 1.07   Partie 2 :  1.58  (20h13-21h08)     1.45       '
+p509
+tp510
+a(S'Mardi 19 '
+p511
+S'    Partie 1 : 0.93   Partie 2 : 0.98 (20h11-20h38*)       Partie 1 : 1.02   Partie 2 :  1.50  (20h12-21h13)     1.32       '
+p512
+tp513
+a(S'Merc. 20 '
+p514
+S'    Partie 1 : 0.78   Partie 2 : 1.18 (20h41-21h16)       Partie 1 : 0.98   Partie 2 :  1.57  (20h06-21h08)     1.29       '
+p515
+tp516
+a(S'Jeudi 21 '
+p517
+S'    Partie 1 : 0.84   Partie 2 : 1.07 (20h42-21h16)       Partie 1 : 0.92   Partie 2 :  1.47  (20h12-21h11)     1.24       '
+p518
+tp519
+a(S'Vend. 22 '
+p520
+S'    Partie 1 : 0.60 (Castaldi)   Partie 2 : 0.63(Castaldi)       Partie 1 : 0.84   Partie 2 : 1.08     1.39       '
+p521
+tp522
+a(S'Lundi 25 '
+p523
+S'    Partie 1 : 1.03   Partie 2 : 1.38       Partie 1 : 0.69 (best of)   Partie 2 : 1.02 (best of)     1.39       '
+p524
+tp525
+a(S'Mardi 26 '
+p526
+S'    Partie 1 : 1.03   Partie 2 :  1.24       Partie 1 : 0.47 (best of)   Partie 2 : 0.86 (best of)     1.23       '
+p527
+tp528
+a(S'Merc. 27 '
+p529
+S'    Partie 1 : 0.93   Partie 2 : 1.27       Partie 1 : 0.50 (best of)   Partie 2 : 0.89 (best of)     1.38       '
+p530
+tp531
+a(S'Jeudi 28 '
+p532
+S'    Partie 1 : 1.00   Partie 2 : 1.19       Partie 1 : 0.46(best of)   Partie 2 : 0.79 (best of)     1.35            * Dbut du prime Touche pas  mon Kendji vers 20h45...(contre trs rgulirement 21h25 pour les autres programmes de "premire" partie de soire).'
+p533
+tp534
+aa(lp535
+(S'Lundi 07 '
+p536
+S'    Partie 1 : 1.02   Partie 2 : 1.50 (20h37-21h18)       Partie 1 : 1.06   Partie 2 :  1.67   (20h11-21h19)     1.33       '
+p537
+tp538
+a(S'Mardi 08 '
+p539
+S'    Partie 1 : 1.00 (19h49-20h29)   Partie 2 :  1.35  (20h36-21h20!)       Partie 1 : 0.85 (19h26-20h05)   Partie 2 : 1.27 (20h14-21h11)     1.31       '
+p540
+tp541
+a(S'Merc. 09 '
+p542
+S'    Partie 1 : 1.03 (19h40-20h29)   Partie 2 : 1.34 (20h37-21h14)       Partie 1 : 0.88 (19h26-20h04)   Partie 2 : 1.37 (20h10-21h04)     1.39       '
+p543
+tp544
+a(S'Jeudi 10 '
+p545
+S'    Partie 1 : 0.95 (19h39-20h29)   Partie 2 : 1.24 (20h37-21h17)       Partie 1 : 0.88 (19h27-20h06)   Partie 2 :  1.46  (20h14-21h11)     1.38       '
+p546
+tp547
+a(S'Vend. 11 '
+p548
+S'    Partie 1 : 0.49(Castaldi)   Partie 2 : 0.67 (Castaldi)       Partie 1 : 0.83   Partie 2 : 0.99     1.23       '
+p549
+tp550
+a(S'Lundi 14 '
+p551
+S'    Partie 1 : 1.03   Partie 2 : 1.30(20h38-21h19)       Partie 1 : 0.89   Partie 2 :  1.54  (20h15-21h15)       1.43         '
+p552
+tp553
+a(S'Mardi 15 '
+p554
+S'    Partie 1 : 1.01   Partie 2 :  1.38  (20h37-21h17)       Partie 1 : 0.83   Partie 2 : 1.27 (20h10-21h10)     1.37       '
+p555
+tp556
+a(S'Mercredi 16 '
+p557
+S'    Partie 1 : 0.93   Partie 2 : 1.31 (20h38-21h11)       Partie 1 : 0.91   Partie 2 :  1.45  (20h16-21h10)     1.39       '
+p558
+tp559
+a(S'Jeudi 17 '
+p560
+S'    Partie 1 : 1.20   Partie 2 : 1.34 (20h39-21h16)       Partie 1 : 0.93   Partie 2 :  1.55  (20h15-21h18!)     1.18         '
+p561
+tp562
+a(S'Vendredi 18 '
+p563
+S'      Partie 1 : 0.51 (Castaldi)   Partie 2 : 0.88 (Castaldi)       Partie 1 : 0.69   Partie 2 : 1.08     1.40       '
+p564
+tp565
+a(S'Lundi 21 '
+p566
+S'    Partie 1 : 1.06   Partie 2 : 1.38 (20h38-21h19)       Partie 1 : 1.00   Partie 2 :  1.54  (20h09-21h16)     1.44       '
+p567
+tp568
+a(S'Mardi 22 '
+p569
+S'    Partie 1 : 1.03   Partie 2 : 1.30       Partie 1 : 0.91   Partie 2 : 1.34     1.48       '
+p570
+tp571
+a(S'Mercredi 23 '
+p572
+S'    Partie 1 : 1.09   Partie 2 : 1.36(20h39-21h20!)       Partie 1 : 0.94   Partie 2 : 1.40 (20h09-21h07)     1.56       '
+p573
+tp574
+a(S'Jeudi 24 '
+p575
+S'    Partie 1 : 1.15   Partie 2 :   1.59  (20h39- 21h24! )       Partie 1 : 0.95   Partie 2 : 1.55 (20h13-21h12)     1.38       '
+p576
+tp577
+a(S'Vendredi 25 '
+p578
+S'    Partie 1 : 0.75 (Castaldi)   Partie 2 : 0.87 (Castaldi)       Partie 1 : 0.90   Partie 2 : 1.18     1.34       '
+p579
+tp580
+a(S'Lundi 28 '
+p581
+S'    Partie 1 : 1.09   Partie 2 : 1.41 (20h38-21h16)       Partie 1 : 1.03   Partie 2 :  1.62  (20h12-21h16)     1.32       '
+p582
+tp583
+a(S'Mardi 29 '
+p584
+S'    Partie 1 : 1.09   Partie 2 : 1.44 (20h36-21h15)       Partie 1 : 1.08   Partie 2 :  1.67  (20h13-21h07)     1.33       '
+p585
+tp586
+a(S'Merc. 30 '
+p587
+S'    Partie 1 : 1.01   Partie 2 : 1.23(20h38-21h15)       Partie 1 : 0.95   Partie 2 : 1.41 (20h11-21h08)     1.52       '
+p588
+tp589
+a(S'Jeudi 31 '
+p590
+S'    Partie 1 : 0.98   Partie 2 : 1.34 (20h38-21h16)       Partie 1 : 1.13   Partie 2 :  1.74  (20h10-21h12)     1.31'
+p591
+tp592
+aa(lp593
+(S'Lundi 03 '
+p594
+S'    Partie 1 : 0.84 (19h39-20h32)   Partie 2 : 1.13(20h41- 21h22! )       Partie 1 : 1.06 (19h27-20h07)   Partie 2 :  1.69 (20h14-21h12)     1.49       '
+p595
+tp596
+a(S'Mardi 04 '
+p597
+S'    Partie 1 : 0.91 (19h39-20h29)   Partie 2 : 1.37 (20h38- 21h21! )       Partie 1 : 1.00 (19h26-20h04)   Partie 2 :  1.57  (20h11-21h14)     1.54       '
+p598
+tp599
+a(S'Merc. 05 '
+p600
+S'    Partie 1 : 0.92   Partie 2 : 1.12 (20h38-21h18)       Partie 1 : 0.97   Partie 2 : 1.53 (20h10-21h10)       1.55            '
+p601
+tp602
+a(S'Jeudi 06 '
+p603
+S'    Partie 1 : 0.93   Partie 2 : 1.37       Partie 1 : 0.90   Partie 2 : 1.45       1.56            '
+p604
+tp605
+a(S'Vend. 07 '
+p606
+S':   Partie 2 : 0.79 (Benam)     Partie 1 : 0.77   Partie 2 : 1.33     1.52       '
+p607
+tp608
+a(S'Lundi 10 '
+p609
+S'    Partie 1 : 0.67 (19h39-20h29)   Partie 2 : 1.20 (20h38- 21h35!!! )       Partie 1 : 0.87 (19h26-20h03)   Partie 2 : 1.26 (20h10-21h08)       1.59   (record)         '
+p610
+tp611
+a(S'Mardi 11 '
+p612
+S'    Partie 1 : 0.85 (19h40-20h29)   Partie 2 : 1.25 (20h37-21h17)       Partie 1 : 1.02 (19h26-20h06)   Partie 2 : 1.51 (20h13-21h09)     1.57       '
+p613
+tp614
+a(S'Merc. 12 '
+p615
+S'    Partie 1 : 0.86 (19h39-20h29)   Partie 2 : 1.26 (20h38-21h14)       Partie 1 : 0.94 (19h26-20h06)   Partie 2 :  1.53  (20h14-21h08)     1.47       '
+p616
+tp617
+a(S'Jeudi 13 '
+p618
+S'    Partie 1 : 0.96 (19h38-20h30)   Partie 2 : 1.21 (20h39-21h17)       Partie 1 : 0.99 (19h26-20h01)   Partie 2 :  1.54  (20h09-21h12)     1.41       '
+p619
+tp620
+a(S'Vend. 14 '
+p621
+S'  Partie 2, courte cause BTP : 0.75 (Benam)     Partie 1 : 0.80 (Salhia Brakhlia)   Partie 2, courte cause hand : 1.00     1.29       '
+p622
+tp623
+a(S'Lundi 17 '
+p624
+S'    Partie 1 : 0.94 (19h39-20h29)   Partie 2 : 1.60 (20h37-21h18)       Partie 1 : 1.00 (19h26-20h02)   Partie 2 :  1.80  (20h09-21h19)     1.52       '
+p625
+tp626
+a(S'Mardi 18 '
+p627
+S'    Partie 1 : 0.98(19h41-20h29)   Partie 2 : 1.34 (20h37-21h16)       Partie 1 : 0.86(19h26-20h02)   Partie 2 : 1.37 (20h10-21h06)     1.47       '
+p628
+tp629
+a(S'Merc. 19 '
+p630
+S'    Partie 1 : 1.00 (19h40-20h02)   Partie 2 : 1.00(20h09-20h30; prime Baba en Laponie ensuite)       Partie 1 : 1.03 (19h26-20h03)   Partie 2 :  1.56  (20h10-21h14)     1.33       '
+p631
+tp632
+a(S'Jeudi 20 '
+p633
+S'    Partie 1 : 0.86 (19h40-20h29)   Partie 2 : 1.42 (20h37- 21h27! )       Partie 1 : 0.96 (19h28-20h06)   Partie 2 :  1.54  (20h12-21h06)     1.29       '
+p634
+tp635
+a(S'Vend. 21 '
+p636
+S'    Partie 1 : 0.68 (Castaldi)   Partie 2 : 1.00 (Castaldi)       Partie 1 : 0.89   Partie 2 :  1.30     1.12       '
+p637
+tp638
+a(S'Lundi 24 '
+p639
+S'  best-of   best-of          '
+p640
+tp641
+a(S'Mardi 25 '
+p642
+S'  best-of   best-of          '
+p643
+tp644
+a(S'Merc. 26 '
+p645
+S'  best-of   best-of          '
+p646
+tp647
+a(S'Jeudi 27 '
+p648
+S'  best-of   best-of          '
+p649
+tp650
+a(S'Vend. 28 '
+p651
+S'  best-of   best-of'
+p652
+tp653
+aatp654
+ba(lp655
+g17
+(g18
+(dp656
+g20
+g21
+(g22
+(I0
+tp657
+g24
+tp658
+Rp659
+(I1
+(I4
+tp660
+g31
+I00
+(lp661
+g35
+ag36
+ag37
+ag38
+atp662
+bsg40
+Nstp663
+Rp664
+a(dp665
+S'0.14.1'
+p666
+(dp667
+S'axes'
+p668
+g16
+sS'blocks'
+p669
+(lp670
+(dp671
+S'mgr_locs'
+p672
+c__builtin__
+slice
+p673
+(I0
+I4
+I1
+tp674
+Rp675
+sS'values'
+p676
+g53
+sasstp677
+bsbs.
