@@ -58,10 +58,14 @@ month_names = {u'JANVIER': 'January',
 
 month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-holidays_dates = [[pd.Timestamp('2017-12-22 00:00:00'), pd.Timestamp('2018-01-08 00:00:00')],
-                  [pd.Timestamp('2018-06-29 00:00:00'), pd.Timestamp('2018-09-03 00:00:00')],
-                  [pd.Timestamp('2018-12-21 00:00:00'), pd.Timestamp('2019-01-07 00:00:00')],
-                  [pd.Timestamp('2019-06-13 00:00:00'), pd.Timestamp('2019-08-30 00:00:00')]]
+#holidays_dates = [[pd.Timestamp('2017-12-22 00:00:00'), pd.Timestamp('2018-01-08 00:00:00')],
+#                  [pd.Timestamp('2018-06-29 00:00:00'), pd.Timestamp('2018-09-03 00:00:00')],
+#                  [pd.Timestamp('2018-12-21 00:00:00'), pd.Timestamp('2019-01-07 00:00:00')],
+#                  [pd.Timestamp('2019-06-28 00:00:00'), pd.Timestamp('2019-09-02 00:00:00')]]
+holidays_dates = [[pd.Timestamp('2017-12-22').date(), pd.Timestamp('2018-01-08').date()],
+                  [pd.Timestamp('2018-06-29').date(), pd.Timestamp('2018-09-03').date()],
+                  [pd.Timestamp('2018-12-21').date(), pd.Timestamp('2019-01-07').date()],
+                  [pd.Timestamp('2019-06-28').date(), pd.Timestamp('2019-09-02').date()]]
 
 # -----------------------------------------------------------------------------
 # Data processing functions
@@ -180,7 +184,7 @@ def add_missing_data(time_series, a_df, days_of_week):
 page = requests.get(website)
 soup = BeautifulSoup(page.content, 'html.parser')  # Get the html file
 class_htmls = {k:soup.find_all('div', class_=v) for (k,v) in class_name.items()}  # each element contains a table (corresponding to a month)
-df_temp = pd.DataFrame({k: [class_htmls[k][i].get_text(separator=' ').replace('\n',' ').strip().split('TPMP') for i in range(1,len(class_htmls[k])-3)] for k in class_name.keys()})
+df_temp = pd.DataFrame({k: [class_htmls[k][i].get_text(separator=' ').replace('\n',' ').strip().split('TPMP',1) for i in range(1,len(class_htmls[k])-3)] for k in class_name.keys()})
 
 # Get the month/year of each row and put them into a different column / the remaining text goes in a 3rd column
 df_temp.loc[:, 'month_name'] = df_temp['txt_data'].map(lambda x: re.split('(\d+)',x[0])[0].strip())
@@ -240,7 +244,7 @@ df = add_missing_data(time_range, df, days_of_week)
 df.sort_values('date', inplace=True,ascending=False)  # order chronologically
 df = df.reset_index(drop=True)  # reset rows index (and drop the previous one)
 #df = df.dropna(thresh=4)  # remove rows than at most 4 non N.A.
-
+df['date'] = df['date'].apply(lambda x: x.date())
 # -----------------------------------------------------------------------------
 # DATA PLOTTING
 # -----------------------------------------------------------------------------
@@ -310,21 +314,21 @@ plt.xlabel('')
 ## Group by day of week
 fig6 = plt.figure(6)
 ax61 = fig6.add_subplot(311)
-sns.boxplot(x=df_part2['day_name_eng'], y=df_part2["TPMP"], order=day_order, ax=ax61, showmeans=True, meanline=True)
+sns.boxplot(x=df_part2['day_name_eng'], y=df_part2["TPMP"],order=day_order,ax=ax61,showmeans=True,meanline=True)
 plt.xlabel('')
 plt.ylabel('')
 plt.title('TPMP')
 ax61.xaxis.grid(False)
 plt.ylim([0.2,2.0])
 ax62 = fig6.add_subplot(312)
-sns.boxplot(x=df_part2['day_name_eng'], y=df_part2["Q"], order=day_order, ax=ax62, showmeans=True, meanline=True)
+sns.boxplot(x=df_part2['day_name_eng'], y=df_part2["Q"],order=day_order,ax=ax62,showmeans=True,meanline=True)
 plt.xlabel('')
 plt.ylabel('')
 plt.title('Q')
 ax62.xaxis.grid(False)
 plt.ylim([0.2,2.0])
 ax63 = fig6.add_subplot(313)
-sns.boxplot(x=df_part2['day_name_eng'], y=df_part2["CAV"], order=day_order, ax=ax63, showmeans=True, meanline=True)
+sns.boxplot(x=df_part2['day_name_eng'], y=df_part2["CAV"],order=day_order,ax=ax63,showmeans=True,meanline=True)
 ax63.xaxis.grid(False)
 plt.xlabel('')
 plt.ylabel('')
@@ -366,7 +370,7 @@ plt.suptitle("Audience per month")
 # DATA ANALYSIS
 # -----------------------------------------------------------------------------
 ## Linear regression on total viewers evolution with time since Sept 2019
-df_y = df_part2[df_part2['date']>datetime(2019,9,1)][['date','total']]
+df_y = df_part2[df_part2['date']>datetime(2019,9,1).date()][['date','total']]
 df_y = df_y.dropna(axis=0)
 Y = np.reshape(df_y['total'].values,[df_y.shape[0],1])
 X = np.reshape(np.arange(df_part2.shape[0]-len(Y),df_part2.shape[0]),[len(Y),1])
@@ -377,7 +381,7 @@ Y_check = np.concatenate((Y_check,np.empty([df_part2.shape[0]-len(Y),1])*np.nan)
 df_part2['short-term'] = Y_check
 
 ## Linear regression on total viewers evolution with time since Jan 2018
-df_y = df_part2[df_part2['date']>datetime(2018,1,1)][['date','total']]
+df_y = df_part2[df_part2['date']>datetime(2018,1,1).date()][['date','total']]
 df_y = df_y.dropna(axis=0)
 Y = np.reshape(df_y['total'].values,[df_y.shape[0],1])
 X = np.reshape(df_y.index.tolist(),[len(df_y.index),1])
@@ -407,101 +411,104 @@ pd.plotting.autocorrelation_plot(df_part2['TPMP'].dropna().values.tolist())
 # Trend/Seasonality analysis
 # The additive model is Y[t] = T[t] + S[t] + e[t]
 y = df_part2[['date','TPMP']]
-y.loc[:,'date'] = y['date'].apply(lambda x: x.date()).copy()
+y.loc[:,'date'] = y['date'].copy()
 y = y.set_index('date')
 y.index = pd.to_datetime(y.index)
 y.resample('B')
 y_nona = y.dropna()
-decomposition=sm.tsa.seasonal_decompose(y_nona, model='additive', freq=5)
+decomposition=sm.tsa.seasonal_decompose(y_nona, model='additive', freq=30)
 fig = decomposition.plot()
 plt.show()
 
-# -----------------------------------------------------------------------------
-# TIME SERIES FORECASTING
-# -----------------------------------------------------------------------------
-'''
-ARIMA, short for ‘Auto Regressive Integrated Moving Average’ is actually a 
-class of models that ‘explains’ a given time series based on its own past 
-values, that is, its own lags and the lagged forecast errors, so that equation 
-can be used to forecast future values.
---> linear time series model
-'''
-y_reverse = y.iloc[::-1]
-freq = pd.infer_freq(y_reverse.index)
-y_reverse.index.freq = pd.tseries.frequencies.to_offset(freq)
-test_start_date = '2019-10-03'
-
-p = d = q = range(0,3)
-pdq = list(product(p,d,q))
-seasonal_pdq = [(x[0],x[1],x[2],5) for x in list(product(p,d,q))]
-
-# use a “grid search” to find the optimal set of parameters that yields the best performance for our model
-min_val = 0.0
-params = None
-for param in pdq:
-    for param_seasonal in seasonal_pdq:
-        try:
-            mod = sm.tsa.statespace.SARIMAX(y_reverse[:test_start_date],order=param,seasonal_order=param_seasonal,enforce_stationarity=False,enforce_invertibility=False)
-            results = mod.fit(disp=False)
-            print('ARIMA{}x{} - AIC:{}'.format(param, param_seasonal, results.aic))
-            if results.aic<min_val:
-                min_val = results.aic
-                params = param, param_seasonal
-        except:
-            continue
-
-print('Optimal ARIMA{}x{} - AIC:{}'.format(params[0], params[1], min_val))
-mod = sm.tsa.statespace.SARIMAX(y_reverse[:test_start_date],
-                                order=params[0],
-                                seasonal_order=params[1],
-                                enforce_stationarity=False,
-                                enforce_invertibility=False)
-results = mod.fit(disp=False)
-print(results.summary().tables[1])
-
-results.plot_diagnostics(figsize=(16, 8))
-plt.show()
-
-# Forecasting validation
-#pred = results.get_prediction(start=pd.to_datetime(test_start_date), end=pd.to_datetime('2019-05-28'), dynamic=False)
-pred = results.get_prediction(start=pd.to_datetime(test_start_date), end=df_part2.iloc[0,0], dynamic=False)
-pred_ci = pred.conf_int()  # default alpha = .05 returns a 95% confidence interval
-ax = y_reverse.plot(label='observed')
-pred.predicted_mean.plot(ax=ax, label='One-step ahead Forecast', alpha=.7)
-ax.fill_between(pred_ci.index,
-                pred_ci.iloc[:, 0],
-                pred_ci.iloc[:, 1], color='k', alpha=.2)
-ax.set_xlabel('Date')
-ax.set_ylabel('TPMP viewers')
-plt.legend()
-plt.show()
-plt.title('Out of sample prediction')
-
-# Estimator measures
-y_forecasted = np.reshape(pred.predicted_mean.values,[len(pred.predicted_mean.values),1])
-y_truth = y_reverse[test_start_date:].values
-mfe = (y_forecasted - y_truth).mean()
-print('The Mean Forecast Error is {}'.format(round(mfe, 2)))
-
-mse = ((y_forecasted - y_truth) ** 2).mean()
-print('The Mean Squared Error is {}'.format(round(mse, 2)))
-
-print('The Root Mean Squared Error is {}'.format(round(np.sqrt(mse), 2)))
-
-# Produce a new forecast
-mod = sm.tsa.statespace.SARIMAX(y_reverse,
-                                order=(1, 0, 1),
-                                seasonal_order=(0, 1, 1, 5),
-                                enforce_stationarity=False,
-                                enforce_invertibility=False)
-results = mod.fit(disp=False)
-pred_uc = results.get_forecast(steps=10)
-pred_ci = pred_uc.conf_int()  # default alpha = .05 returns a 95% confidence interval
-ax = y_reverse.plot(label='observed', figsize=(14, 7))
-pred_uc.predicted_mean.plot(ax=ax, label='Forecast')
-ax.fill_between(pred_ci.index,pred_ci.iloc[:, 0],pred_ci.iloc[:, 1], color='k', alpha=.25)
-ax.set_xlabel('Date')
-ax.set_ylabel('TPMP viewers')
-plt.legend()
-plt.show()
-plt.title('Forecast for November')
+## -----------------------------------------------------------------------------
+## TIME SERIES FORECASTING
+## -----------------------------------------------------------------------------
+#'''
+#ARIMA, short for ‘Auto Regressive Integrated Moving Average’ is actually a 
+#class of models that ‘explains’ a given time series based on its own past 
+#values, that is, its own lags and the lagged forecast errors, so that equation 
+#can be used to forecast future values.
+#--> linear time series model
+#'''
+#y_reverse = y.iloc[::-1]
+#freq = pd.infer_freq(y_reverse.index)
+#y_reverse.index.freq = pd.tseries.frequencies.to_offset(freq)
+#test_start_date = '2019-10-03'
+#
+#p = d = q = range(0,3)
+#pdq = list(product(p,d,q))
+#seasonal_pdq = [(x[0],x[1],x[2],5) for x in list(product(p,d,q))]
+#
+## use a “grid search” to find the optimal parameters that yields the best performance for our model
+#min_val = 0.0
+#params = None
+#for param in pdq:
+#    for param_seasonal in seasonal_pdq:
+#        try:
+#            mod = sm.tsa.statespace.SARIMAX(y_reverse[:test_start_date],
+#                                            order=param,
+#                                            seasonal_order=param_seasonal,
+#                                            enforce_stationarity=False,
+#                                            enforce_invertibility=False)
+#            results = mod.fit(disp=False)
+#            print('ARIMA{}x{} - AIC:{}'.format(param, param_seasonal, results.aic))
+#            if results.aic<min_val:
+#                min_val = results.aic
+#                params = param, param_seasonal
+#        except:
+#            continue
+#
+#print('Optimal ARIMA{}x{} - AIC:{}'.format(params[0], params[1], min_val))
+#mod = sm.tsa.statespace.SARIMAX(y_reverse[:test_start_date],
+#                                order=params[0],
+#                                seasonal_order=params[1],
+#                                enforce_stationarity=False,
+#                                enforce_invertibility=False)
+#results = mod.fit(disp=False)
+#print(results.summary().tables[1])
+#
+#results.plot_diagnostics(figsize=(16, 8))
+#plt.show()
+#
+## Forecasting validation
+#pred = results.get_prediction(start=pd.to_datetime(test_start_date),end=df_part2.iloc[0,0],dynamic=False)
+#pred_ci = pred.conf_int()  # default alpha = .05 returns a 95% confidence interval
+#ax = y_reverse.plot(label='observed')
+#pred.predicted_mean.plot(ax=ax, label='One-step ahead Forecast', alpha=.7)
+#ax.fill_between(pred_ci.index,
+#                pred_ci.iloc[:, 0],
+#                pred_ci.iloc[:, 1], color='k', alpha=.2)
+#ax.set_xlabel('Date')
+#ax.set_ylabel('TPMP viewers')
+#plt.legend()
+#plt.show()
+#plt.title('Out of sample prediction')
+#
+## Estimator measures
+#y_forecasted = np.reshape(pred.predicted_mean.values,[len(pred.predicted_mean.values),1])
+#y_truth = y_reverse[test_start_date:].values
+#mfe = (y_forecasted - y_truth).mean()
+#print('The Mean Forecast Error is {}'.format(round(mfe, 2)))
+#
+#mse = ((y_forecasted - y_truth) ** 2).mean()
+#print('The Mean Squared Error is {}'.format(round(mse, 2)))
+#
+#print('The Root Mean Squared Error is {}'.format(round(np.sqrt(mse), 2)))
+#
+## Produce a new forecast
+#mod = sm.tsa.statespace.SARIMAX(y_reverse,
+#                                order=params[0],
+#                                seasonal_order=params[1],
+#                                enforce_stationarity=False,
+#                                enforce_invertibility=False)
+#results = mod.fit(disp=False)
+#pred_uc = results.get_forecast(steps=15)
+#pred_ci = pred_uc.conf_int()  # default alpha = .05 returns a 95% confidence interval
+#ax = y_reverse.plot(label='observed', figsize=(14, 7))
+#pred_uc.predicted_mean.plot(ax=ax, label='Forecast')
+#ax.fill_between(pred_ci.index,pred_ci.iloc[:, 0],pred_ci.iloc[:, 1], color='k', alpha=.25)
+#ax.set_xlabel('Date')
+#ax.set_ylabel('TPMP viewers')
+#plt.legend()
+#plt.show()
+#plt.title('Forecast for November')
