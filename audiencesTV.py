@@ -60,7 +60,8 @@ month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'O
 
 holidays_dates = [[pd.Timestamp('2017-12-22 00:00:00'), pd.Timestamp('2018-01-08 00:00:00')],
                   [pd.Timestamp('2018-06-29 00:00:00'), pd.Timestamp('2018-09-03 00:00:00')],
-                  [pd.Timestamp('2018-12-21 00:00:00'), pd.Timestamp('2019-01-07 00:00:00')]]
+                  [pd.Timestamp('2018-12-21 00:00:00'), pd.Timestamp('2019-01-07 00:00:00')],
+                  [pd.Timestamp('2019-06-13 00:00:00'), pd.Timestamp('2019-08-30 00:00:00')]]
 
 # -----------------------------------------------------------------------------
 # Data processing functions
@@ -190,6 +191,12 @@ df_temp['text_1'] = [df_temp['text_1'][ii].encode('ascii', 'ignore') for ii in r
 # Split the info in 'text' per day into multiple columns list items
 df_temp['text_1'] = df_temp['text_1'].apply(get_data_each_day)
 
+# Add old data from previous month
+with open('data_file_06212125', 'r') as my_file:
+    temp = pickle.load(my_file)
+df_old = temp['temp dataframe df_temp'].iloc[7:,:]   # THIS LINE SHOULD BE EDITED TO A VARIABLE MONTH !!!
+df_temp = pd.concat([df_temp,df_old], ignore_index=True)
+
 # REMOVE WRONG ENTRIES (that don't match with a specific date)
 new_dates = [[df_temp.loc[row_id].month_name, df_temp.loc[row_id].year_name, [txt[0] for txt in df_temp.loc[row_id].text_1]] for row_id in range(df_temp.shape[0])]
 new_dates_2, rem_idx_list = [], []
@@ -201,7 +208,7 @@ for month_idx,item in enumerate(new_dates):
 new_info = [[item[1] for it_idx,item in enumerate(df_temp.loc[row_id].text_1) if it_idx not in rem_idx_list[row_id]] for row_id in range(df_temp.shape[0])]
 new_info_2 = [item.strip() for sublist in new_info for item in sublist]  # flatten new_info list
 
-# Save data
+# Save current data
 file_name = str("".join(re.split('-|\s|:',str(datetime.now())))[4:-9])
 with open('data_file_' + file_name, 'a') as my_file:
     my_pickler = pickle.Pickler(my_file)
@@ -278,13 +285,13 @@ fig3 = plt.figure(3)
 ax3 = fig3.add_subplot(111)
 fig3plt = df_part2.plot(x='date',y='total', ax=ax3, sharex=True, sharey=True, legend=False)
 plt.title('Part 2 total daily viewers')
-#for hol_days in holidays_dates:
-#    holiday_beg_idx = df_part1[df_part1['date']==hol_days[0]].index[0] - 1
-#    holiday_end_idx = df_part1[df_part1['date']==hol_days[1]].index[0] + 1
-#    plt.axvspan(df_part1['date'].iloc[holiday_beg_idx], df_part1['date'].iloc[holiday_end_idx], color='grey', alpha=0.15, lw=0)
-#    if (hol_days[1]-hol_days[0]).days > 30:
-#        plt.text(df_part1['date'].iloc[int((holiday_beg_idx+holiday_end_idx)/2)+5], 3.5, 'HOLIDAYS', rotation = 90., style='italic', size='x-large')
-#plt.xlabel('')
+for hol_days in holidays_dates:
+    holiday_beg_idx = df_part1[df_part1['date']==hol_days[0]].index[0] - 1
+    holiday_end_idx = df_part1[df_part1['date']==hol_days[1]].index[0] + 1
+    plt.axvspan(df_part1['date'].iloc[holiday_beg_idx], df_part1['date'].iloc[holiday_end_idx], color='grey', alpha=0.15, lw=0)
+    if (hol_days[1]-hol_days[0]).days > 30:
+        plt.text(df_part1['date'].iloc[int((holiday_beg_idx+holiday_end_idx)/2)+5], 3.5, 'HOLIDAYS', rotation = 90., style='italic', size='x-large')
+plt.xlabel('')
 
 # Create total viewers column for pdm calculation
 for col_idx,column in enumerate(df_part1):
@@ -296,9 +303,6 @@ for col_idx,column in enumerate(df_part2):
         df_part2['share ' +  column] = np.where(df_part2[column] is np.nan, df_part2[column], df_part2[column]/df_part2['total'])
 
 # for each show, PDM evolution over time
-#df_part1.plot.area(x='date',y=['share TPMP','share Q','share CAV'])
-#plt.title('Part 1 Market shares')
-#plt.xlabel('')
 df_part2.plot.area(x='date',y=['share TPMP','share Q','share CAV'])
 plt.title('Part 2 Market shares')
 plt.xlabel('')
@@ -361,8 +365,8 @@ plt.suptitle("Audience per month")
 # -----------------------------------------------------------------------------
 # DATA ANALYSIS
 # -----------------------------------------------------------------------------
-## Linear regression on total viewers evolution with time since Jan 2019
-df_y = df_part2[df_part2['date']>datetime(2019,1,1)][['date','total']]
+## Linear regression on total viewers evolution with time since Sept 2019
+df_y = df_part2[df_part2['date']>datetime(2019,9,1)][['date','total']]
 df_y = df_y.dropna(axis=0)
 Y = np.reshape(df_y['total'].values,[df_y.shape[0],1])
 X = np.reshape(np.arange(df_part2.shape[0]-len(Y),df_part2.shape[0]),[len(Y),1])
@@ -425,9 +429,9 @@ can be used to forecast future values.
 y_reverse = y.iloc[::-1]
 freq = pd.infer_freq(y_reverse.index)
 y_reverse.index.freq = pd.tseries.frequencies.to_offset(freq)
-test_start_date = '2019-04-01'
+test_start_date = '2019-10-03'
 
-p = d = q = range(0,2)
+p = d = q = range(0,3)
 pdq = list(product(p,d,q))
 seasonal_pdq = [(x[0],x[1],x[2],5) for x in list(product(p,d,q))]
 
@@ -459,7 +463,8 @@ results.plot_diagnostics(figsize=(16, 8))
 plt.show()
 
 # Forecasting validation
-pred = results.get_prediction(start=pd.to_datetime(test_start_date), end=pd.to_datetime('2019-05-28'), dynamic=False)
+#pred = results.get_prediction(start=pd.to_datetime(test_start_date), end=pd.to_datetime('2019-05-28'), dynamic=False)
+pred = results.get_prediction(start=pd.to_datetime(test_start_date), end=df_part2.iloc[0,0], dynamic=False)
 pred_ci = pred.conf_int()  # default alpha = .05 returns a 95% confidence interval
 ax = y_reverse.plot(label='observed')
 pred.predicted_mean.plot(ax=ax, label='One-step ahead Forecast', alpha=.7)
@@ -499,4 +504,4 @@ ax.set_xlabel('Date')
 ax.set_ylabel('TPMP viewers')
 plt.legend()
 plt.show()
-plt.title('Forecast for June')
+plt.title('Forecast for November')
